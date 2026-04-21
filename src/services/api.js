@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = '/posts.json';
+const API_URL = '/db.json';
 
 const api = axios.create({
   baseURL: API_URL,
