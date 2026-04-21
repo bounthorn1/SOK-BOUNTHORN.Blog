@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Odor-MeanChey; ;
+  src: url(../src/assets/font/OdorMeanChey.ttf);
+}
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
