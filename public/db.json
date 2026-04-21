@@ -1,0 +1,126 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "alex",
+      "password": "alex123",
+      "name": "Alex Morgan",
+      "avatar": "https://picsum.photos/seed/alex/80/80.jpg"
+    },
+    {
+      "id": "2",
+      "username": "sarah",
+      "password": "sarah123",
+      "name": "Sarah Chen",
+      "avatar": "https://picsum.photos/seed/sarah/80/80.jpg"
+    },
+    {
+      "id": "3",
+      "username": "admin",
+      "password": "admin123",
+      "name": "Admin",
+      "avatar": "https://picsum.photos/seed/admin/80/80.jpg"
+    },
+    {
+      "username": "admin12",
+      "password": "123456",
+      "name": "Dara",
+      "avatar": "https://picsum.photos/seed/admin12/80/80.jpg",
+      "id": "uT0c142YWiw"
+    }
+  ],
+  "posts": [
+    {
+      "title": "The Art of Slow Living in a Hyperconnected World",
+      "content": "We live in an age where speed is worshipped as a virtue. Faster internet, faster shipping, faster everything. But somewhere along the way, we forgot that some of the most meaningful experiences in life unfold at their own pace — deliberately, unhurriedly, and without apology.\n\nI remember the morning I decided to stop checking my phone before getting out of bed. It sounds trivial, almost absurdly so, but that single decision unraveled something I hadn't realized was tightly wound inside me. The first few days were restless. My fingers would reach for the glowing rectangle out of pure muscle memory, and finding nothing there — just the texture of my blanket — felt like a small loss each time.\n\nBut by the end of the first week, something shifted. I started noticing the quality of morning light through my window. I began tasting my coffee instead of gulping it. I found myself thinking actual thoughts — not reactions to other people's thoughts, but my own, organic, meandering reflections that led nowhere in particular and everywhere that mattered.\n\nSlow living isn't about doing less. It's about doing what you do with full presence. It's the difference between skimming a novel to say you've read it and letting a paragraph pull you under until you forget you're reading at all. In a world that demands our attention in ever-smaller fragments, choosing depth over breadth might be the most radical act of self-care available to us.",
+      "author": "Alex Morgan",
+      "image": "https://d34vm3j4h7f97z.cloudfront.net/original/4X/8/1/e/81e31f6817402c4a711d09891d53515e0ada2571.jpeg",
+      "tags": [
+        "lifestyle",
+        "mindfulness"
+      ],
+      "published": true,
+      "created_at": "2026-04-21T08:21:51.013Z",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "title": "Why I Stopped Chasing Productivity and Started Creating",
+      "content": "For three years, I optimized my mornings like a software engineer refactoring legacy code. I had wake-up times, cold showers, journaling blocks, deep work sessions — all color-coded in a notion board that would make any productivity influencer weep with admiration. And yet, at the end of those three years, I had very little to show for it beyond a perfectly organized schedule and a persistent feeling of emptiness.\n\nThe problem wasn't the habits themselves. Cold showers are fine. Journaling is genuinely useful. The problem was that I had confused the machinery of creation with creation itself. I had built an elaborate workshop but never actually made anything in it.\n\nThe shift happened on a Tuesday afternoon when, instead of following my carefully planned deep work block, I opened a blank document and just started writing — no outline, no goal, no timer. I wrote for two hours about a memory from childhood that had been sitting in the back of my mind for years. It was messy, unfocused, and probably unpublishable. But it was the most alive I had felt in months.\n\nProductivity systems are tools, not identities. When we start measuring our worth by how efficiently we fill our time, we've already lost something precious. The creative impulse doesn't care about your morning routine. It shows up when it shows up, and your only job is to be ready — not busy, just ready.",
+      "author": "Alex Morgan",
+      "image": "https://picsum.photos/seed/productivity/1200/600.jpg",
+      "created_at": "2024-12-10T08:15:00Z",
+      "published": true,
+      "tags": [
+        "creativity",
+        "reflection"
+      ]
+    },
+    {
+      "id": "3",
+      "title": "The Invisible Architecture of Good Design",
+      "content": "The best design is the kind you never notice. Not because it's boring, but because it fits so perfectly into your expectations that your brain stops questioning it entirely. A well-designed door doesn't make you wonder whether to push or pull. A well-designed app doesn't make you hunt for the back button. These aren't accidents — they're the result of thousands of small decisions, each one invisible on its own, that collectively create an experience that feels effortless.\n\nI've been thinking about this a lot lately because I've been redesigning my portfolio, and the temptation to add — more animations, more gradients, more visual interest — is almost overwhelming. Every design tool puts a universe of possibilities at your fingertips, and the instinct is to use all of them. But restraint is where the real craft lives.\n\nDieter Rams understood this. His ten principles for good design still hold up because they're not about aesthetics — they're about respect for the person using the thing. 'Good design is as little design as possible' isn't a call for minimalism as a style; it's a recognition that every unnecessary element is a small tax on someone's attention, and attention is the most finite resource we have.\n\nThe next time you use something that just works — a pen that glides, a website that loads before you notice, a room that makes you exhale — take a moment to appreciate the invisible architecture behind it. Someone spent hours making sure you'd never have to think about it. That's not nothing. That's everything.",
+      "author": "Alex Morgan",
+      "image": "https://picsum.photos/seed/design-arch/1200/600.jpg",
+      "created_at": "2024-12-05T14:20:00Z",
+      "published": true,
+      "tags": [
+        "design",
+        "craft"
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Letters from Kyoto: Finding Silence in the City",
+      "content": "Kyoto has a kind of silence that I've never encountered anywhere else. It's not the absence of sound — there are trains and bicycles and school children and the occasional tourist exclaiming over something — but rather a quality of attention that the city seems to cultivate in its visitors. You arrive loud and restless, and within a day, without quite knowing how, your internal volume dial has turned down by several notches.\n\nI spent most of my first morning at Ryoan-ji, the famous rock garden. Fifteen rocks arranged on raked white gravel, and you can never see all of them from any single position. I sat on the wooden veranda for over an hour, watching other visitors do the same thing — sit, look, leave. Nobody talked. The garden doesn't invite interpretation. It just asks you to be present, and somehow that's enough.\n\nLater that week, I wandered into a small tea shop in Higashiyama and was served matcha by a woman who moved with such deliberate precision that making tea looked like a form of meditation. Each gesture was practiced and unhurried. The bowl was warm in my hands, the foam was perfect, and for a few minutes, the entire world contracted to the size of that small ceramic circle.\n\nI came to Kyoto looking for temples and gardens. I left understanding that silence isn't something you find in a place — it's something a place can remind you how to find in yourself. The city doesn't give you peace. It shows you where you left it.",
+      "author": "Alex Morgan",
+      "image": "https://picsum.photos/seed/kyoto-silence/1200/600.jpg",
+      "created_at": "2024-11-28T09:00:00Z",
+      "published": true,
+      "tags": [
+        "travel",
+        "mindfulness"
+      ]
+    },
+    {
+      "id": "5",
+      "title": "On Writing, Vulnerability, and the Stories We Owe Ourselves",
+      "content": "Every writer I know struggles with the same question, though they express it differently: How honest am I willing to be? Not honest in the factual sense — though that matters — but honest in the emotional sense. Am I willing to write the thing I'm actually feeling, or am I going to write the version that makes me look better, smarter, more composed?\n\nI've deleted more first drafts than I've published. Not because the writing was bad, but because it was safe. It was the literary equivalent of a LinkedIn post — professionally optimistic, carefully curated, stripped of the mess and contradiction that make a human life actually worth reading about. The best writing I've ever done has always started with a feeling I didn't want to admit to.\n\nThere's a misconception that vulnerability in writing means oversharing or being confessional for its own sake. But real vulnerability is more specific than that. It's not about telling everyone your secrets; it's about being precise about the truth of an experience, even when that precision makes you uncomfortable. It's the difference between saying 'I was sad' and describing the exact quality of a Tuesday afternoon when you realized something you'd been hoping for wasn't going to happen.\n\nWe owe it to ourselves to tell our stories honestly, not because the world needs them (though it might), but because the act of telling them is how we understand who we are. Every story you soften, every detail you sand down, every emotion you rewrite to be more palatable — that's a small theft from your own life. Write the real thing. You can always delete it later.",
+      "author": "Alex Morgan",
+      "image": "https://picsum.photos/seed/writing-vuln/1200/600.jpg",
+      "created_at": "2024-11-20T16:45:00Z",
+      "published": true,
+      "tags": [
+        "writing",
+        "reflection"
+      ]
+    },
+    {
+      "id": "6",
+      "title": "A Kitchen Philosophy: What Cooking Taught Me About Patience",
+      "content": "I burned my first onion. Not just slightly overcooked — I turned it into a small blackened mass that set off the smoke alarm and prompted my roommate to ask, with genuine concern, whether I was trying to burn the building down. I was twenty-three years old and had never cooked a meal that didn't involve a microwave.\n\nThat was ten years ago. Since then, cooking has become the most important practice in my life — more than meditation, more than journaling, more than any self-improvement book I've ever read. Not because I became a great cook (I'm decent, at best), but because cooking taught me something no book could: patience is not waiting. Patience is paying attention to something that takes time.\n\nA proper braise takes three hours. You can't rush it. You can turn up the heat and try, but all you'll get is tough meat and shallow flavor. The collagen needs time to break down. The flavors need time to meld. The liquid needs time to reduce into something that coats the back of a spoon. Every step requires your presence but not your interference. You watch, you adjust, you wait. And then, eventually, something transforms.\n\nI think about this whenever I'm frustrated with how slowly things are moving in my life — career, relationships, creative projects. We live in a culture that treats waiting as failure, as if the only valid state is forward motion. But some of the most important transformations in life are like a braise. They need heat and time and attention, and if you try to force them, you just end up with something tough and shallow. Trust the process. Stir occasionally. And for god's sake, don't turn up the heat.",
+      "author": "Alex Morgan",
+      "image": "https://picsum.photos/seed/kitchen-phil/1200/600.jpg",
+      "created_at": "2024-11-12T11:30:00Z",
+      "published": true,
+      "tags": [
+        "life",
+        "food"
+      ]
+    },
+    {
+      "id": "7",
+      "title": "The Case for Reading Books You Don't Understand",
+      "content": "There's a particular kind of frustration that comes from reading a book that's clearly brilliant but equally clearly over your head. You turn the pages, nodding at sentences you only half-comprehend, feeling both illuminated and inadequate in equal measure. Most people put the book down at this point and return to something more comfortable. I'm here to argue that you should keep going.\n\nI first experienced this with Virginia Woolf's 'The Waves.' I was nineteen, and the book felt like trying to hold water. The sentences were gorgeous — achingly, almost unbearably beautiful — but the structure dissolved the moment I tried to grasp it. I read the whole thing in a state of bewildered admiration, understanding maybe sixty percent of what was happening on any given page.\n\nBut here's the thing: that sixty percent changed me. The way Woolf wrote about consciousness — the fluidity of it, the way thought bleeds into sensation and memory and perception without clear boundaries — it rewired something in how I experienced my own inner life. I started noticing things I hadn't noticed before. The way a memory can arrive fully formed, triggered by nothing. The way two people in the same room are having entirely different experiences of the same moment.\n\nA book you fully understand confirms what you already know. A book you partially understand expands the perimeter of what's possible. Read above your level. Not as a chore or a performance, but as an act of faith that understanding comes in layers, and the first layer — the one where you're simply in the presence of something too large to take in all at once — is its own kind of reward.",
+      "author": "Alex Morgan",
+      "image": "https://picsum.photos/seed/reading-books/1200/600.jpg",
+      "created_at": "2024-11-05T13:00:00Z",
+      "published": true,
+      "tags": [
+        "reading",
+        "reflection"
+      ]
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
