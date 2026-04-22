@@ -1,34 +1,47 @@
-// Import your database directly!
-import db from './db.json';
+
+import axios from 'axios';
+
+const API_URL = 'https://github.com/bounthorn1/SOK-BOUNTHORN.Blog/blob/main/src/services/api.js';
+
+const api = axios.create({
+  baseURL: API_URL,
+  timeout: 5000,
+  headers: {
+    'Content-Type': 'application/json',
+  },
+});
 
 export const getPosts = async () => {
-  // Get posts directly from db.json instead of localhost:3000
-  return db.posts.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+  const res = await api.get('/posts');
+  return res.data.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
 };
 
 export const getPost = async (id) => {
-  return db.posts.find(p => p.id === parseInt(id));
+  const res = await api.get(`/posts/${id}`);
+  return res.data;
 };
 
-// ⚠️ NOTE: The functions below will NOT save permanently on Vercel 
-// because Vercel files are "read-only". But they will not break your site.
 export const createPost = async (data) => {
-  console.log("Would save to db.json locally, but cannot save on Vercel.");
-  return data; 
+  const res = await api.post('/posts', data);
+  return res.data;
 };
 
 export const updatePost = async (id, data) => {
-  return data;
+  const res = await api.put(`/posts/${id}`, data);
+  return res.data;
 };
 
 export const deletePost = async (id) => {
-  return id;
+  const res = await api.delete(`/posts/${id}`);
+  return res.data;
 };
 
 export const getUsers = async () => {
-  return db.users; // Assuming your db.json has a "users" array
+  const res = await api.get('/users');
+  return res.data;
 };
 
 export const createUser = async (data) => {
-  return data;
+  const res = await api.post('/users', data);
+  return res.data;
 };
