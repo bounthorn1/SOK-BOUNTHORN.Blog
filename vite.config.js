@@ -7,5 +7,6 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: process.env.VITE_BASE_PATH || '/SOK-BOUNTHORN.Blog',
+  // Changed from '/SOK-BOUNTHORN.Blog' to '/' for Vercel
+  base: '/', 
 })
