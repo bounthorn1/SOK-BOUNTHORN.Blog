@@ -120,6 +120,19 @@
         "reading",
         "reflection"
       ]
+    },
+    {
+      "id": "8",
+      "title": "The Case for Reading Books You Don't Understand",
+      "content": "There's a particular kind of frustration that comes from reading a book that's clearly brilliant but equally clearly over your head. You turn the pages, nodding at sentences you only half-comprehend, feeling both illuminated and inadequate in equal measure. Most people put the book down at this point and return to something more comfortable. I'm here to argue that you should keep going.\n\nI first experienced this with Virginia Woolf's 'The Waves.' I was nineteen, and the book felt like trying to hold water. The sentences were gorgeous — achingly, almost unbearably beautiful — but the structure dissolved the moment I tried to grasp it. I read the whole thing in a state of bewildered admiration, understanding maybe sixty percent of what was happening on any given page.\n\nBut here's the thing: that sixty percent changed me. The way Woolf wrote about consciousness — the fluidity of it, the way thought bleeds into sensation and memory and perception without clear boundaries — it rewired something in how I experienced my own inner life. I started noticing things I hadn't noticed before. The way a memory can arrive fully formed, triggered by nothing. The way two people in the same room are having entirely different experiences of the same moment.\n\nA book you fully understand confirms what you already know. A book you partially understand expands the perimeter of what's possible. Read above your level. Not as a chore or a performance, but as an act of faith that understanding comes in layers, and the first layer — the one where you're simply in the presence of something too large to take in all at once — is its own kind of reward.",
+      "author": "Alex Morgan",
+      "image": "https://picsum.photos/seed/reading-books/1200/600.jpg",
+      "created_at": "2024-11-05T13:00:00Z",
+      "published": true,
+      "tags": [
+        "reading",
+        "reflection"
+      ]
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
