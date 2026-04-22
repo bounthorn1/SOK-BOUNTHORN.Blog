@@ -7,9 +7,10 @@ export const getPosts = async () => {
   return [];
 };
 
+// FIXED: String() ensures "1" === 1 doesn't fail
 export const getPost = async (id) => {
   if (db && db.posts) {
-    return db.posts.find(p => p.id === parseInt(id));
+    return db.posts.find(p => String(p.id) === String(id));
   }
   return null;
 };
