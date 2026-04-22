@@ -1,47 +1,31 @@
-
-import axios from 'axios';
-
-const API_URL = 'https://github.com/bounthorn1/SOK-BOUNTHORN.Blog/blob/main/src/services/api.js';
-
-const api = axios.create({
-  baseURL: API_URL,
-  timeout: 5000,
-  headers: {
-    'Content-Type': 'application/json',
-  },
-});
+// DO NOT USE AXIOS OR LOCALHOST ON VERCEL
+import db from './db.json';
 
 export const getPosts = async () => {
-  const res = await api.get('/posts');
-  return res.data.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+  return db.posts.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
 };
 
 export const getPost = async (id) => {
-  const res = await api.get(`/posts/${id}`);
-  return res.data;
+  return db.posts.find(p => p.id === parseInt(id));
 };
 
+// These buttons will NOT save permanently on Vercel, but they won't break the site
 export const createPost = async (data) => {
-  const res = await api.post('/posts', data);
-  return res.data;
+  return data;
 };
 
 export const updatePost = async (id, data) => {
-  const res = await api.put(`/posts/${id}`, data);
-  return res.data;
+  return data;
 };
 
 export const deletePost = async (id) => {
-  const res = await api.delete(`/posts/${id}`);
-  return res.data;
+  return id;
 };
 
 export const getUsers = async () => {
-  const res = await api.get('/users');
-  return res.data;
+  return db.users || [];
 };
 
 export const createUser = async (data) => {
-  const res = await api.post('/users', data);
-  return res.data;
+  return data;
 };
