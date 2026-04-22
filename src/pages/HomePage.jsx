@@ -111,9 +111,9 @@ const CATEGORY_CARDS = [
   { key: 'creativity', label: 'Creativity', icon: PaletteIcon, image: 'https://raw.githubusercontent.com/bounthorn1/Image/refs/heads/main/112653-10.jpg' },
   { key: 'design', label: 'Design', icon: BezierIcon, image: 'https://res.klook.com/image/upload/w_1265,h_791,c_fill,q_85/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/jmbrg1d5kiaxaegud37b.webp' },
   { key: 'travel', label: 'Travel', icon: PlaneIcon, image: 'https://res.klook.com/image/upload/c_crop,h_1875,w_3000,x_0,y_188,z_0.2/w_1265,h_791,c_fill,q_85/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/zjjaaznxbbliwvyiieor.webp' },
-  { key: 'writing', label: 'Writing', icon: PenNibIcon, image: 'https://picsum.photos/seed/dest-writ-b/600/400.jpg' },
-  { key: 'food', label: 'Food', icon: UtensilsIcon, image: 'https://picsum.photos/seed/dest-food-b/600/400.jpg' },
-  { key: 'reading', label: 'Reading', icon: BookOpenIcon, image: 'https://picsum.photos/seed/dest-read-b/600/400.jpg' },
+  { key: 'writing', label: 'Writing', icon: PenNibIcon, image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/mP4nwOjPPQuvoOb4/temp-background-A0xwolJVq4S8JyMe.png' },
+  { key: 'food', label: 'Food', icon: UtensilsIcon, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Kyuq8zbAWFG2k8zyi5riecH_GxuznHzJbQ&s' },
+  { key: 'reading', label: 'Reading', icon: BookOpenIcon, image: 'https://newhorizoninternationalschool.in/wp-content/uploads/2024/09/boy-is-reading-book-front-book-that-has-word-world-it-1024x574.jpg' },
 ];
 
 const TESTIMONIALS = [
