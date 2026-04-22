@@ -1,13 +1,17 @@
-// WE DO NOT USE AXIOS. WE DO NOT USE GITHUB LINKS.
-// We just grab the file locally from the root folder!
 import db from '../db.json';
 
 export const getPosts = async () => {
-  return db.posts.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+  if (db && db.posts) {
+    return db.posts.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+  }
+  return [];
 };
 
 export const getPost = async (id) => {
-  return db.posts.find(p => p.id === parseInt(id));
+  if (db && db.posts) {
+    return db.posts.find(p => p.id === parseInt(id));
+  }
+  return null;
 };
 
 export const createPost = async (data) => {
@@ -23,7 +27,10 @@ export const deletePost = async (id) => {
 };
 
 export const getUsers = async () => {
-  return db.users || [];
+  if (db && db.users) {
+    return db.users;
+  }
+  return [];
 };
 
 export const createUser = async (data) => {
