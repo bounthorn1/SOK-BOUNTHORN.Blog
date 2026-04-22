@@ -220,7 +220,7 @@ export default function ContactPage() {
               <RevealSection delay={200}>
                 <div className="sticky top-24 space-y-6">
                   <div className="rounded-2xl overflow-hidden border border-gray-200 dark:border-slate-700 aspect-[4/3] bg-slate-100 dark:bg-slate-800 relative">
-                    <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/13/2b/cc/9f.jpg" alt="Map" className="w-full h-full object-cover" />
+                    <img src="https://raw.githubusercontent.com/bounthorn1/Image/refs/heads/main/17180042317139.jpg" alt="Map" className="w-full h-full object-cover" />
                     <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
                       <div className="bg-white dark:bg-slate-900 rounded-xl px-5 py-3 shadow-lg flex items-center gap-3">
                         <div className="w-8 h-8 rounded-lg bg-orange-500 flex items-center justify-center text-white"><LocationPinIcon /></div>
