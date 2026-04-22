@@ -7,10 +7,14 @@ export const getPosts = async () => {
   return [];
 };
 
-// FIXED: String() ensures "1" === 1 doesn't fail
 export const getPost = async (id) => {
+  // This will print in the console to help us debug
+  console.log("Looking for Post ID:", id);
+  
   if (db && db.posts) {
-    return db.posts.find(p => String(p.id) === String(id));
+    const foundPost = db.posts.find(p => String(p.id) === String(id));
+    console.log("Found this post:", foundPost);
+    return foundPost;
   }
   return null;
 };
