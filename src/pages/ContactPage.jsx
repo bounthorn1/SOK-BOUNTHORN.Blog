@@ -67,8 +67,8 @@ const LinkedInIcon = () => (
 );
 
 const CONTACT_INFO = [
-  { Icon: EmailIcon, label: 'Email Us', value: 'hello@inkwell.blog', sub: 'We reply within 24 hours' },
-  { Icon: LocationIcon, label: 'Location', value: 'San Francisco, CA', sub: 'Working remotely worldwide' },
+  { Icon: EmailIcon, label: 'Email Us', value: 'sokbounthorn18@gmail.com', sub: 'We reply within 24 hours' },
+  { Icon: LocationIcon, label: 'Location', value: 'Phnom Penh Cambodia', sub: 'Working remotely worldwide' },
   { Icon: ClockIcon, label: 'Response Time', value: 'Within 24 Hours', sub: 'Monday - Friday' },
 ];
 
@@ -80,9 +80,9 @@ const SOCIAL_LINKS = [
 ];
 
 const QUICK_INFO = [
-  { Icon: QuestionIcon, title: 'General Questions', email: 'hello@inkwell.blog' },
-  { Icon: PenNibIcon, title: 'Submit a Story', email: 'write@inkwell.blog' },
-  { Icon: BugIcon, title: 'Report a Bug', email: 'support@inkwell.blog' },
+  { Icon: QuestionIcon, title: 'General Questions', email: 'sokbounthorn18@gmail.com' },
+  { Icon: PenNibIcon, title: 'Submit a Story', email: 'wsokbounthorn18@gmail.com' },
+  { Icon: BugIcon, title: 'Report a Bug', email: 'sokbounthorn18@gmail.com' },
 ];
 
 export default function ContactPage() {
@@ -220,13 +220,13 @@ export default function ContactPage() {
               <RevealSection delay={200}>
                 <div className="sticky top-24 space-y-6">
                   <div className="rounded-2xl overflow-hidden border border-gray-200 dark:border-slate-700 aspect-[4/3] bg-slate-100 dark:bg-slate-800 relative">
-                    <img src="https://picsum.photos/seed/contact-map-view/600/450.jpg" alt="Map" className="w-full h-full object-cover" />
+                    <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/13/2b/cc/9f.jpg" alt="Map" className="w-full h-full object-cover" />
                     <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
                       <div className="bg-white dark:bg-slate-900 rounded-xl px-5 py-3 shadow-lg flex items-center gap-3">
                         <div className="w-8 h-8 rounded-lg bg-orange-500 flex items-center justify-center text-white"><LocationPinIcon /></div>
                         <div>
-                          <p className="text-xs font-bold text-gray-800 dark:text-white">San Francisco, CA</p>
-                          <p className="text-[10px] text-gray-400">United States</p>
+                          <p className="text-xs font-bold text-gray-800 dark:text-white">Phnom Penh</p>
+                          <p className="text-[10px] text-gray-400">Cambodia</p>
                         </div>
                       </div>
                     </div>
@@ -274,9 +274,9 @@ export default function ContactPage() {
           <div className="space-y-3">
             {[
               { q: 'How long does it take to get a response?', a: 'We typically respond within 24 hours on business days. For urgent matters, we try to get back to you even sooner.' },
-              { q: 'Can I submit a guest post?', a: 'Absolutely! Send us an email at write@inkwell.blog with a brief pitch and we will review it within a few days.' },
+              { q: 'Can I submit a guest post?', a: 'Absolutely! Send us an email at sokbounthorn18@gmail.com with a brief pitch and we will review it within a few days.' },
               { q: 'Do you offer advertising or sponsorships?', a: 'We keep Inkwell ad-free to preserve the reading experience. We do not accept sponsored content at this time.' },
-              { q: 'I found a bug on the site. What should I do?', a: 'Please email support@inkwell.blog with a description of the issue and we will fix it as soon as possible.' },
+              { q: 'I found a bug on the site. What should I do?', a: 'Please email sokbounthorn18@gmail.com with a description of the issue and we will fix it as soon as possible.' },
             ].map((faq, i) => (
               <RevealSection key={i} delay={i * 60}>
                 <details className="group bg-white dark:bg-slate-900 rounded-xl border border-gray-200 dark:border-slate-700 overflow-hidden">

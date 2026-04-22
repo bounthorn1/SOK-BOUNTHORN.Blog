@@ -96,7 +96,7 @@ export default function AboutPage() {
             </span>
             <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-[1.1] mb-4">
               The Story Behind<br />
-              <span className="text-orange-300">SOK BOUNTHORN</span>
+              <span className="text-orange-300">Our Journey</span>
             </h1>
             <p className="text-white/50 text-sm sm:text-base leading-relaxed max-w-lg mx-auto">
               A space for thoughtful writing, honest perspectives, and the quiet moments that shape who we are.
@@ -112,10 +112,10 @@ export default function AboutPage() {
             <RevealSection>
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden aspect-[4/3] shadow-lg">
-                  <img src="https://picsum.photos/seed/about-writing-desk/800/600.jpg" alt="Writing desk" className="w-full h-full object-cover" />
+                  <img src="https://raw.githubusercontent.com/bounthorn1/Image/refs/heads/main/Gemini_Generated_Image_kjek25kjek25kjek.png" alt="Writing desk" className="w-full h-full object-cover" />
                 </div>
                 <div className="absolute -bottom-5 -right-5 sm:-bottom-6 sm:-right-6 w-28 h-28 sm:w-36 sm:h-36 rounded-2xl overflow-hidden border-4 border-white dark:border-slate-900 shadow-xl">
-                  <img src="https://picsum.photos/seed/about-coffee-cup/300/300.jpg" alt="Coffee cup" className="w-full h-full object-cover" />
+                  <img src="https://raw.githubusercontent.com/bounthorn1/Image/refs/heads/main/Gemini_Generated_Image_3op6603op6603op6.png" alt="Coffee cup" className="w-full h-full object-cover" />
                 </div>
                 <div className="absolute -top-4 -left-4 bg-orange-500 text-white rounded-xl px-4 py-3 shadow-lg shadow-orange-500/30">
                   <p className="text-2xl font-display font-black leading-none">Est.</p>
@@ -131,7 +131,7 @@ export default function AboutPage() {
                   <span className="text-orange-500">A Sanctuary for Stories</span>
                 </h2>
                 <div className="space-y-4 text-gray-500 dark:text-slate-400 leading-relaxed text-sm sm:text-base">
-                  <p>Inkwell was born from a simple belief: that in a world obsessed with speed and virality, there should be a place where writing can breathe. Where a story does not need to compete for attention — it just needs to be true.</p>
+                  <p>BOUNTHORN.Blog was born from a simple belief: that in a world obsessed with speed and virality, there should be a place where writing can breathe. Where a story does not need to compete for attention — it just needs to be true.</p>
                   <p>We started as a personal journal, a quiet corner to untangle thoughts about life, creativity, loss, and wonder. But something happened along the way — other people started relating. They started sharing their own stories. And what was once a whisper became a conversation.</p>
                   <p>Today, Inkwell is a growing community of writers and readers who believe that the best stories are not the loudest — they are the most honest. We do not chase trends. We do not optimize for algorithms. We write what matters.</p>
                 </div>
@@ -229,10 +229,10 @@ export default function AboutPage() {
             <RevealSection delay={200}>
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden aspect-[4/3] shadow-lg">
-                  <img src="https://picsum.photos/seed/about-reading-nook/800/600.jpg" alt="Reading nook" className="w-full h-full object-cover" />
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/6e/59/34/caption.jpg?w=1400&h=-1&s=1" alt="Reading nook" className="w-full h-full object-cover" />
                 </div>
                 <div className="absolute -bottom-5 -left-5 sm:-bottom-6 sm:-left-6 w-32 h-32 sm:w-40 sm:h-40 rounded-2xl overflow-hidden border-4 border-slate-50 dark:border-slate-800 shadow-xl">
-                  <img src="https://picsum.photos/seed/about-bookshelf/400/400.jpg" alt="Bookshelf" className="w-full h-full object-cover" />
+                  <img src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1280,h_720/w_79,x_14,y_14,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/zov0u6w4i5l6iovmnafw/AngkorWatFullDayTourwithMonkBlessing.webp" alt="Bookshelf" className="w-full h-full object-cover" />
                 </div>
                 <div className="absolute top-4 right-4 bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm rounded-xl p-3 shadow-lg">
                   <div className="flex items-center gap-3">

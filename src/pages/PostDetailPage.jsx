@@ -220,7 +220,7 @@ export default function PostDetailPage() {
         </RevealSection>
       </article>
 
-      {/* Related posts */}
+      {/* Related posts - FIXED: Removed RevealSection so they are always visible */}
       {relatedPosts.length > 0 && (
         <section className="max-w-6xl mx-auto px-5 sm:px-8 mt-8 mb-8">
           <RevealSection>
@@ -230,9 +230,7 @@ export default function PostDetailPage() {
           </RevealSection>
           <div className="grid sm:grid-cols-3 gap-6">
             {relatedPosts.map((p) => (
-              <RevealSection key={p.id} delay={80}>
-                <PostCard post={p} />
-              </RevealSection>
+              <PostCard key={p.id} post={p} />
             ))}
           </div>
         </section>
