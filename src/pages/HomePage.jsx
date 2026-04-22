@@ -109,7 +109,7 @@ const ShieldIcon = ({ size = 14, className = "" }) => (
 const CATEGORY_CARDS = [
   { key: 'lifestyle', label: 'Lifestyle', icon: LeafIcon, image: 'https://picsum.photos/seed/dest-life-b/600/400.jpg' },
   { key: 'creativity', label: 'Creativity', icon: PaletteIcon, image: 'https://picsum.photos/seed/dest-creat-b/600/400.jpg' },
-  { key: 'design', label: 'Design', icon: BezierIcon, image: 'https://picsum.photos/seed/dest-des-b/600/400.jpg' },
+  { key: 'design', label: 'Design', icon: BezierIcon, image: 'https://res.klook.com/image/upload/w_1265,h_791,c_fill,q_85/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/jmbrg1d5kiaxaegud37b.webp' },
   { key: 'travel', label: 'Travel', icon: PlaneIcon, image: 'https://picsum.photos/seed/dest-trav-b/600/400.jpg' },
   { key: 'writing', label: 'Writing', icon: PenNibIcon, image: 'https://picsum.photos/seed/dest-writ-b/600/400.jpg' },
   { key: 'food', label: 'Food', icon: UtensilsIcon, image: 'https://picsum.photos/seed/dest-food-b/600/400.jpg' },
