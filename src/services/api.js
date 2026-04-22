@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = import.meta.env.VITE_API_URL || 'https://github.com/bounthorn1/SOK-BOUNTHORN.Blog';
+const API_URL ='https://github.com/bounthorn1/SOK-BOUNTHORN.Blog';
 
 const api = axios.create({
   baseURL: API_URL,
