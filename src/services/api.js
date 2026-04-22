@@ -1,5 +1,5 @@
 // DO NOT USE AXIOS OR LOCALHOST ON VERCEL
-import db from './db.json';
+import db from '.../db.json';
 
 export const getPosts = async () => {
   return db.posts.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
