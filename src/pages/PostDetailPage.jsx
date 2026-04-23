@@ -199,7 +199,7 @@ export default function PostDetailPage() {
               className="inline-flex items-center gap-2 text-sm text-ink-muted dark:text-warm-300 hover:text-accent transition-colors"
             >
               <i className="fa-solid fa-arrow-left text-xs"></i>
-              All stories
+              រឿងរ៉ាវទាំងអស់
             </Link>
             <div className="flex gap-2">
               {[
@@ -225,7 +225,7 @@ export default function PostDetailPage() {
         <section className="max-w-6xl mx-auto px-5 sm:px-8 mt-8 mb-8">
           <RevealSection>
             <h2 className="font-display text-xl font-bold text-ink dark:text-warm-200 mb-6">
-              More stories
+               រឿងរ៉ាវបន្ថែម
             </h2>
           </RevealSection>
           <div className="grid sm:grid-cols-3 gap-6">
