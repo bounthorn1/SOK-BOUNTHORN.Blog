@@ -139,7 +139,7 @@ export default function BlogPage() {
       {/* BLOG HERO */}
       <section className="relative min-h-[50vh] sm:min-h-[55vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src="https://www.vivutravel.com/images/des-cambodia3/kampot-travel-guide.jpg" alt="" className="w-full h-full object-cover" />
+          <img src="https://raw.githubusercontent.com/bounthorn1/Image/refs/heads/main/drone-view-of-buildings-and-praek-tuek-chhu-river-in-kampot-cambodia.webp" alt="" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/70"></div>
         </div>
         <div className="absolute top-12 left-8 sm:top-16 sm:left-16 pointer-events-none">
