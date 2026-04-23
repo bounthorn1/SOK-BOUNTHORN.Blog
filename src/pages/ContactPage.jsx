@@ -109,7 +109,7 @@ export default function ContactPage() {
       {/* HERO */}
       <section className="relative min-h-[45vh] sm:min-h-[50vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src="https://picsum.photos/seed/contact-hero-nature/1600/900.jpg" alt="" className="w-full h-full object-cover" />
+          <img src="https://www.agoda.com/wp-content/uploads/2024/04/siem-reap-cambodia-angkor-wat-1244x700.jpg" alt="" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/70"></div>
         </div>
         <div className="absolute top-10 left-10 sm:top-16 sm:left-20 pointer-events-none">

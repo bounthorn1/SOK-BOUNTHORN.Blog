@@ -216,18 +216,18 @@ export default function HomePage() {
             <div className="max-w-2xl">
               <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-orange-500 text-white text-[11px] font-bold uppercase tracking-widest rounded-full mb-5">
                 <FeatherIcon size={10} />
-                Personal Blog
+                ប្លុកផ្ទាល់ខ្លួន
               </span>
               <h1 className="font-display text-4xl sm:text-5xl lg:text-[3.5rem] font-black text-white leading-[1.08] mb-4">
-                Discover Stories
+                ស្វែងយល់រឿង
                 <br />
-                <span className="text-orange-300">That Move You</span>
+                <span className="text-orange-300">ដែលធ្វើឱ្យអ្នកចាប់ផ្តើម</span>
               </h1>
               <p className="text-white/50 text-base sm:text-lg leading-relaxed max-w-lg mb-6">
-                Thoughtful writing about life, creativity, and the quiet moments that shape who we are.
+                ការសរសេរដែលគិតបន្ថយអំពីជីវិត ភាពច្នៃប្រឌិត និងពេលវេលាដ៏ស្រស់ស្អាតនៅចន្លោះនោះ។
               </p>
               <Link to={featured ? `/post/${featured.id}` : '/create'} className="inline-flex items-center gap-2 px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm rounded-xl transition-colors shadow-lg shadow-orange-500/30">
-                Take a Tour <ArrowRightIcon size={12} />
+                ធ្វើដំណើរកម្សាន្ត <ArrowRightIcon size={12} />
               </Link>
             </div>
           </RevealSection>
@@ -311,7 +311,7 @@ export default function HomePage() {
                   <div className="lg:col-span-2 flex items-center p-4 sm:p-5">
                     <button onClick={handleSearch} className="w-full py-5 sm:py-6 bg-orange-500 hover:bg-orange-600 text-white font-bold text-base sm:text-lg transition-all rounded-xl flex items-center justify-center gap-3 shadow-lg shadow-orange-500/30 hover:shadow-xl hover:shadow-orange-500/40 hover:scale-[1.02] active:scale-[0.98]">
                       <SearchIcon size={18} />
-                      <span>Search</span>
+                      <span>ស្វែងរក</span>
                     </button>
                   </div>
                 </div>
@@ -344,9 +344,9 @@ export default function HomePage() {
             </div>
             <div className="order-1 lg:order-2 text-center lg:py-8">
               <RevealSection>
-                <span className="inline-block text-orange-500 dark:text-orange-400 text-[11px] font-bold uppercase tracking-[0.2em] mb-4">Most Popular Topics</span>
-                <h2 className="font-display text-3xl sm:text-4xl lg:text-[2.75rem] font-black text-gray-900 dark:text-white leading-[1.1] mb-5">Let's Discover The World<br /><span className="text-orange-500 dark:text-orange-400">With Our Stories</span></h2>
-                <p className="text-gray-500 dark:text-slate-400 text-sm sm:text-base leading-relaxed max-w-md mx-auto mb-8">We craft every piece to exceed expectations — offering thoughtful perspectives on life, creativity, and the beautiful moments in between.</p>
+                <span className="inline-block text-orange-500 dark:text-orange-400 text-[11px] font-bold uppercase tracking-[0.2em] mb-4">ប្រធានបទពេញនិយមបំផុត</span>
+                <h2 className="font-display text-3xl sm:text-4xl lg:text-[2.75rem] font-black text-gray-900 dark:text-white leading-[1.1] mb-5">តោះស្វែងយល់ពីពិភពលោក<br /><span className="text-orange-500 dark:text-orange-400">ជាមួយនឹងរឿងរបស់យើង</span></h2>
+                <p className="text-gray-500 dark:text-slate-400 text-sm sm:text-base leading-relaxed max-w-md mx-auto mb-8">យើងបង្កើតគ្រប់ផ្នែកទាំងអស់ឱ្យលើសពីការរំពឹងទុក ដោយផ្តល់នូវទស្សនវិស័យប្រកបដោយការគិតលើជីវិត ភាពច្នៃប្រឌិត និងពេលវេលាដ៏ស្រស់ស្អាតនៅចន្លោះនោះ។</p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                   <button onClick={scrollToStories} className="inline-flex items-center gap-2 px-7 py-3.5 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm rounded-xl transition-colors shadow-lg shadow-orange-500/25">Browse Stories <ArrowRightIcon size={12} /></button>
                   <Link to="/create" className="inline-flex items-center gap-2 px-7 py-3.5 border-2 border-gray-200 dark:border-slate-700 text-gray-700 dark:text-slate-300 font-semibold text-sm rounded-xl hover:border-orange-300 hover:text-orange-600 dark:hover:border-orange-500 dark:hover:text-orange-400 transition-all"><PenNibIcon size={12} /> Start Writing</Link>
@@ -380,7 +380,7 @@ export default function HomePage() {
             <RevealSection delay={300}>
               <div className="mt-10 sm:mt-14">
                 <div className="flex items-center justify-between mb-5">
-                  <h3 className="font-display text-lg font-bold text-gray-900 dark:text-white">More Topics</h3>
+                  <h3 className="font-display text-lg font-bold text-gray-900 dark:text-white">ប្រធានបទច្រើនទៀត</h3>
                   <button onClick={scrollToStories} className="text-orange-500 hover:text-orange-600 text-xs font-semibold flex items-center gap-1 transition-colors">View All <ArrowRightIcon size={10} /></button>
                 </div>
                 <div className="flex gap-4 overflow-x-auto pb-2 scrollbar-hide">
@@ -406,8 +406,8 @@ export default function HomePage() {
             <div className="absolute inset-0 bg-black/40"></div>
           </div>
           <div className="relative z-10 max-w-4xl mx-auto px-5 sm:px-8 text-center">
-            <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-black text-white mb-4 leading-tight">Discover When You Want To Read</h2>
-            <p className="text-white/70 text-sm sm:text-base mb-12 max-w-lg mx-auto leading-relaxed">Browse through our collection of thoughtful stories, available anytime you need a moment of reflection.</p>
+            <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-black text-white mb-4 leading-tight">ស្វែងយល់នៅពេលអ្នកចង់អាន</h2>
+            <p className="text-white/70 text-sm sm:text-base mb-12 max-w-lg mx-auto leading-relaxed">រកមើលតាមរយៈបណ្តុំនៃរឿងគិតគូររបស់យើង ដែលអាចរកបានគ្រប់ពេលដែលអ្នកត្រូវការការឆ្លុះបញ្ចាំងមួយភ្លែត។</p>
             <div className="grid grid-cols-3 gap-8 sm:gap-12 max-w-md mx-auto">
               <div className="text-center"><p className="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-white mb-1">{posts.length}</p><p className="text-[10px] sm:text-xs uppercase tracking-[0.2em] text-white/60 font-bold">Stories</p></div>
               <div className="text-center"><p className="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-white mb-1">{tags.length}</p><p className="text-[10px] sm:text-xs uppercase tracking-[0.2em] text-white/60 font-bold">Topics</p></div>
@@ -422,7 +422,7 @@ export default function HomePage() {
         <section className="bg-slate-50 dark:bg-slate-800 py-14 sm:py-20">
           <div className="max-w-6xl mx-auto px-5 sm:px-8">
             <RevealSection>
-              <div className="flex items-center gap-2 mb-6"><StarIcon size={14} className="text-amber-400" /><span className="text-[11px] font-semibold uppercase tracking-widest text-orange-500">Featured Story</span></div>
+              <div className="flex items-center gap-2 mb-6"><StarIcon size={14} className="text-amber-400" /><span className="text-[11px] font-semibold uppercase tracking-widest text-orange-500">រឿងជាពិសេសដែរអ្នកត្រូវដឹង</span></div>
               <div className="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-sm border border-gray-100 dark:border-slate-700">
                 <div className="grid md:grid-cols-2">
                   <div className="aspect-[4/3] md:aspect-auto overflow-hidden"><img src={sidebarFeatured.image || `https://picsum.photos/seed/post-${sidebarFeatured.id}/800/600.jpg`} alt={sidebarFeatured.title} className="w-full h-full object-cover" /></div>
@@ -452,20 +452,20 @@ export default function HomePage() {
           {(search || activeTag || sortBy !== 'latest') && (
             <RevealSection>
               <div className="flex flex-wrap items-center gap-2 mb-6 p-3 bg-orange-50 dark:bg-orange-500/10 rounded-xl border border-orange-100 dark:border-orange-500/20">
-                <span className="text-xs font-semibold text-orange-600 dark:text-orange-400 mr-1">Active filters:</span>
+                <span className="text-xs font-semibold text-orange-600 dark:text-orange-400 mr-1">តម្រងដែលកំពុងប្រើ៖</span>
                 {activeTag && (<span className="inline-flex items-center gap-1.5 px-3 py-1 bg-white dark:bg-slate-800 text-orange-600 dark:text-orange-400 text-xs font-medium rounded-lg border border-orange-200 dark:border-orange-500/20"><TagSmallIcon size={9} />{activeTag}<button onClick={() => setActiveTag(null)} className="ml-0.5 text-orange-400 hover:text-orange-600"><XMarkIcon size={9} /></button></span>)}
                 {search && (<span className="inline-flex items-center gap-1.5 px-3 py-1 bg-white dark:bg-slate-800 text-orange-600 dark:text-orange-400 text-xs font-medium rounded-lg border border-orange-200 dark:border-orange-500/20"><SearchIcon size={9} />"{search}"<button onClick={() => setSearch('')} className="ml-0.5 text-orange-400 hover:text-orange-600"><XMarkIcon size={9} /></button></span>)}
                 {sortBy !== 'latest' && (<span className="inline-flex items-center gap-1.5 px-3 py-1 bg-white dark:bg-slate-800 text-orange-600 dark:text-orange-400 text-xs font-medium rounded-lg border border-orange-200 dark:border-orange-500/20"><ArrowDownShortIcon size={9} />{sortLabel}<button onClick={() => setSortBy('latest')} className="ml-0.5 text-orange-400 hover:text-orange-600"><XMarkIcon size={9} /></button></span>)}
-                <button onClick={clearFilters} className="ml-auto text-xs font-semibold text-orange-600 dark:text-orange-400 hover:underline">Clear All</button>
+                <button onClick={clearFilters} className="ml-auto text-xs font-semibold text-orange-600 dark:text-orange-400 hover:underline">លុបទាំងអស់</button>
               </div>
             </RevealSection>
           )}
           <RevealSection>
             <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
               <div>
-                <span className="text-orange-500 text-[11px] font-semibold uppercase tracking-widest">Blog</span>
+                <span className="text-orange-500 text-[11px] font-semibold uppercase tracking-widest">ប្លុក</span>
                 <h2 className="font-display text-2xl sm:text-3xl font-black text-gray-900 dark:text-white mt-1">
-                  {activeTag ? <span>Stories about <span className="text-orange-500 capitalize">{activeTag}</span></span> : search ? 'Search Results' : 'Latest Stories'}
+                  {activeTag ? <span>អំពីរឿងរ៉ាវ <span className="text-orange-500 capitalize">{activeTag}</span></span> : search ? 'Search Results' : 'Latest Stories'}
                   <span className="text-base font-normal text-gray-400 dark:text-slate-500 ml-2">({filtered.length})</span>
                 </h2>
               </div>
@@ -535,13 +535,13 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             <RevealSection>
               <div>
-                <span className="inline-block text-orange-500 dark:text-orange-400 text-[11px] font-bold uppercase tracking-[0.2em] mb-4">Start Your Journey</span>
-                <h2 className="font-display text-3xl sm:text-4xl font-black text-gray-900 dark:text-white leading-[1.1] mb-3">Plan Your Next Read</h2>
-                <p className="font-display text-lg sm:text-xl font-bold text-gray-600 dark:text-slate-300 mb-5">Discover Stories Whenever You Want</p>
-                <p className="text-gray-500 dark:text-slate-400 leading-relaxed text-sm sm:text-base mb-8 max-w-lg">Adventure travel is perfect for those looking to step out of their comfort zone and experience something truly extraordinary. The same goes for reading — every story here is an invitation to explore new perspectives, challenge your thinking, and discover parts of yourself you didn't know existed.</p>
+                <span className="inline-block text-orange-500 dark:text-orange-400 text-[11px] font-bold uppercase tracking-[0.2em] mb-4">ចាប់ផ្តើមដំណើររបស់អ្នក</span>
+                <h2 className="font-display text-3xl sm:text-4xl font-black text-gray-900 dark:text-white leading-[1.1] mb-3">រៀបចំផែនការអានបន្ទាប់របស់អ្នក</h2>
+                <p className="font-display text-lg sm:text-xl font-bold text-gray-600 dark:text-slate-300 mb-5">ស្វែងយល់រឿងនៅពេលអ្នកចង់អាន</p>
+                <p className="text-gray-500 dark:text-slate-400 leading-relaxed text-sm sm:text-base mb-8 max-w-lg">ការធ្វើដំណើរការស្វែងយល់គឺជាការប្រើប្រាស់ដែលអាចមានសមត្ថភាពសម្រាប់អ្នកដែលចង់ចាកចេញពីតំបន់សម្រាប់របស់ពួកគេ និងបញ្ជាក់អត្ថបទដ៏ពិតប្រាកដ។ ដូចគ្នា ការអានគឺជា​ការ​ហុយ​ទា​រ​នា​ម​ខ​វា រហូតដល់ រមណីយដ្ឋានកំពូលពេជ្រ។</p>
                 <div className="grid grid-cols-2 gap-4 mb-8">
-                  <div className="bg-white dark:bg-slate-900 rounded-xl p-4 border border-gray-100 dark:border-slate-700"><div className="w-10 h-10 rounded-lg bg-orange-50 dark:bg-orange-500/10 flex items-center justify-center mb-3"><AwardIcon size={18} className="text-orange-500" /></div><h3 className="font-display text-sm font-bold text-gray-900 dark:text-white mb-1">Best Personal Blog</h3><p className="text-xs text-gray-500 dark:text-slate-400 leading-relaxed">Curated content that prioritizes depth over quantity.</p></div>
-                  <div className="bg-white dark:bg-slate-900 rounded-xl p-4 border border-gray-100 dark:border-slate-700"><div className="w-10 h-10 rounded-lg bg-blue-50 dark:bg-blue-500/10 flex items-center justify-center mb-3"><ShieldIcon size={18} className="text-blue-500" /></div><h3 className="font-display text-sm font-bold text-gray-900 dark:text-white mb-1">Free Stories Forever</h3><p className="text-xs text-gray-500 dark:text-slate-400 leading-relaxed">No paywalls, no ads, no algorithms. Just honest writing.</p></div>
+                  <div className="bg-white dark:bg-slate-900 rounded-xl p-4 border border-gray-100 dark:border-slate-700"><div className="w-10 h-10 rounded-lg bg-orange-50 dark:bg-orange-500/10 flex items-center justify-center mb-3"><AwardIcon size={18} className="text-orange-500" /></div><h3 className="font-display text-sm font-bold text-gray-900 dark:text-white mb-1">លក់ផ្ទាល់ខ្លួនល្អបំផុត</h3><p className="text-xs text-gray-500 dark:text-slate-400 leading-relaxed">មាតិកាដែលបានជ្រើសរើសយ៉ាងម៉ត់ចត់ ដោយផ្តោតលើគុណភាពជាងបរិមាណ</p></div>
+                  <div className="bg-white dark:bg-slate-900 rounded-xl p-4 border border-gray-100 dark:border-slate-700"><div className="w-10 h-10 rounded-lg bg-blue-50 dark:bg-blue-500/10 flex items-center justify-center mb-3"><ShieldIcon size={18} className="text-blue-500" /></div><h3 className="font-display text-sm font-bold text-gray-900 dark:text-white mb-1">រឿងរ៉ាវឥតគិតថ្លៃជារៀងរហូត</h3><p className="text-xs text-gray-500 dark:text-slate-400 leading-relaxed">គ្មានការបិទខ្ទប់ការចូលប្រើ, គ្មានការផ្សព្វផ្សាយ, គ្មានអាល់ហ្គូរីធម៍។ មានតែការសរសេរដោយស្មោះត្រង់ប៉ុណ្ណោះ</p></div>
                 </div>
                 <button onClick={scrollToStories} className="inline-flex items-center gap-2.5 px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-bold text-sm rounded-xl transition-colors shadow-lg shadow-orange-500/25">Browse Stories <ArrowRightIcon size={12} /></button>
               </div>
@@ -562,7 +562,7 @@ export default function HomePage() {
       <section className="bg-white dark:bg-slate-900 py-14 sm:py-20">
         <div className="max-w-6xl mx-auto px-5 sm:px-8">
           <RevealSection>
-            <div className="text-center mb-10"><span className="text-orange-500 text-[11px] font-semibold uppercase tracking-widest">Testimonials</span><h2 className="font-display text-2xl sm:text-3xl font-black text-gray-900 dark:text-white mt-1">What Readers Say</h2></div>
+            <div className="text-center mb-10"><span className="text-orange-500 text-[11px] font-semibold uppercase tracking-widest">មតិយោបល់ពីអ្នកប្រើប្រាស</span><h2 className="font-display text-2xl sm:text-3xl font-black text-gray-900 dark:text-white mt-1">អ្វីដែលអ្នកអាននិយាយ</h2></div>
           </RevealSection>
           <div className="grid sm:grid-cols-3 gap-5">
             {TESTIMONIALS.map((t, i) => (
@@ -591,9 +591,9 @@ export default function HomePage() {
           </div>
           <div className="relative z-10 w-full max-w-6xl mx-auto px-5 sm:px-8 py-16">
             <div className="max-w-2xl">
-              <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-orange-500 text-white text-[11px] font-bold uppercase tracking-widest rounded-full mb-6"><CompassIcon size={10} />Next Reading Destination</span>
-              <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-[1.08] mb-5">Popular Stories<br /><span className="text-orange-300">Available For Everyone</span></h2>
-              <p className="text-white/55 text-base sm:text-lg leading-relaxed max-w-lg mb-8">Dive into a world of stories curated for curious minds. From quiet reflections to bold adventures — there's always something new to discover.</p>
+              <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-orange-500 text-white text-[11px] font-bold uppercase tracking-widest rounded-full mb-6"><CompassIcon size={10} />គោលដៅអានបន្ទាប់</span>
+              <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-[1.08] mb-5">រឿងរ៉ាវពេញនិយម<br /><span className="text-orange-300">អាចប្រើបានសម្រាប់មនុស្សគ្រប់គ្នា</span></h2>
+              <p className="text-white/55 text-base sm:text-lg leading-relaxed max-w-lg mb-8">ចូលទៅក្នុងពិភពនៃរឿងរ៉ាវដែលបានជ្រើសរើសសម្រាប់ចិត្តដែលចង់ដឹងចង់ឃើញ។ ចាប់ពីការគិតស្ងប់ស្ងាត់រហូតដល់ការផ្សងព្រេងដ៏ក្លាហាន — តែងតែមានអ្វីថ្មីៗសម្រាប់ស្វែងរកជានិច្ច.</p>
               <div className="flex flex-wrap gap-4">
                 <button onClick={scrollToStories} className="inline-flex items-center gap-2.5 px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-bold text-sm rounded-xl transition-colors shadow-xl shadow-orange-500/30">Browse Stories Now <ArrowRightIcon size={12} /></button>
                 <Link to="/create" className="inline-flex items-center gap-2.5 px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white font-semibold text-sm rounded-xl transition-colors border border-white/20"><PenNibIcon size={12} /> Write Your Story</Link>
@@ -612,12 +612,12 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-5 sm:px-8">
           <RevealSection>
             <div className="text-center max-w-2xl mx-auto mb-12">
-              <span className="text-orange-500 text-[11px] font-semibold uppercase tracking-widest">Our Blog</span>
+              <span className="text-orange-500 text-[11px] font-semibold uppercase tracking-widest">ប្លក់របស់យើង</span>
               <h2 className="font-display text-2xl sm:text-3xl font-black text-gray-900 dark:text-white mt-2 mb-5">
-                Latest News & Articles
+                ព័ត៌មាន និងអត្ថបទថ្មីៗបំផុត
               </h2>
               <p className="text-gray-500 dark:text-slate-400 leading-relaxed text-sm sm:text-base">
-                Are You Tired Of The Typical Tourist Destinations And Looking To Step Out Of Your Comfort Zone
+                តើអ្នកធុញទ្រាន់នឹងគោលដៅទេសចរណ៍ធម្មតាៗ ហើយកំពុងស្វែងរកការចេញក្រៅពីតំបន់សុវត្ថិភាពរបស់អ្នកមែនទេ? ប្លុករបស់យើងគឺជាកន្លែងដែលអ្នកអាចស្វែងរករឿងរ៉ាវថ្មីៗ និងទាក់ទាញ ដែលបានសរសេរដោយស្មោះត្រង់ពីអ្នកសរសេរពីគ្រប់គ្នា។ ចាប់ផ្តើមដំណើររបស់អ្នកនៅទីនេះ ហើយអនុញ្ញាតឱ្យរឿងរ៉ាវនាំអ្នកទៅកាន់កន្លែងដែលអ្នកមិនធ្លាប់គិតថាអាចទៅដល់បាន។
               </p>
             </div>
           </RevealSection>
@@ -677,7 +677,7 @@ export default function HomePage() {
             </div>
           ) : (
             <div className="text-center py-12">
-              <p className="text-sm text-gray-400 dark:text-slate-500">More stories coming soon.</p>
+              <p className="text-sm text-gray-400 dark:text-slate-500">រឿងរ៉ាវថ្មីៗនឹងមកដល់ឆាប់ៗនេះ.</p>
               <Link to="/create" className="inline-flex items-center gap-2 mt-4 px-5 py-2.5 rounded-xl bg-orange-500 text-white font-medium text-sm hover:bg-orange-600 transition-colors"><PenNibIcon size={12} /> Be the first to write</Link>
             </div>
           )}
@@ -689,7 +689,7 @@ export default function HomePage() {
                   onClick={scrollToStories}
                   className="inline-flex items-center gap-2.5 px-8 py-3.5 border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-semibold text-sm rounded-xl transition-all duration-300"
                 >
-                  View All Articles
+                  មើលអត្ថបទទាំងអស់
                   <ArrowRightIcon size={12} />
                 </button>
               </div>
@@ -704,8 +704,8 @@ export default function HomePage() {
           <div className="absolute inset-0"><img src="https://picsum.photos/seed/cta-bottom-orange/1600/500.jpg" alt="" className="w-full h-full object-cover mix-blend-overlay opacity-10" /></div>
           <div className="relative z-10 max-w-4xl mx-auto px-5 sm:px-8 py-16 sm:py-20 flex flex-col sm:flex-row items-center justify-between gap-8">
             <div className="text-center sm:text-left">
-              <h2 className="font-display text-2xl sm:text-3xl font-black text-white leading-tight mb-2">Ready to Write?</h2>
-              <p className="text-orange-100 text-sm sm:text-base">Share your first story — it's free and always will be.</p>
+              <h2 className="font-display text-2xl sm:text-3xl font-black text-white leading-tight mb-2">ត្រៀមខ្លួនសរសេរហើយឬនៅ?</h2>
+              <p className="text-orange-100 text-sm sm:text-base">ចែករំលែករឿងដំបូងរបស់អ្នក — វាឥតគិតថ្លៃ ហើយនឹងឥតគិតថ្លៃជានិច្</p>
             </div>
             <div className="flex gap-3 shrink-0">
               <Link to="/create" className="inline-flex items-center gap-2 px-7 py-3.5 bg-white text-orange-500 font-semibold text-sm rounded-xl hover:bg-gray-100 transition-colors shadow-lg"><PenNibIcon size={12} /> Write Now</Link>

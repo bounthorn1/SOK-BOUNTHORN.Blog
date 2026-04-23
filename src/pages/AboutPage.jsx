@@ -52,19 +52,19 @@ const BookOpenIcon = () => (
 );
 
 const VALUES = [
-  { Icon: FeatherIcon, title: 'Authentic Writing', desc: 'Every piece is written with honesty and care — no clickbait, no SEO tricks, just real thoughts from real people.' },
-  { Icon: HeartIcon, title: 'Built with Love', desc: 'This blog exists because we believe meaningful stories deserve a beautiful home. Every pixel is crafted with intention.' },
-  { Icon: LockOpenIcon, title: 'Free Forever', desc: 'No paywalls, no subscriptions, no hidden costs. Every story is freely accessible to everyone, always.' },
-  { Icon: UsersIcon, title: 'Community First', desc: "We are not building an audience — we are nurturing a community of readers and writers who care about depth." },
-  { Icon: LeafIcon, title: 'Slow Content', desc: 'We reject the pressure to publish daily. Quality over quantity, always. Each story gets the time it deserves.' },
-  { Icon: CompassIcon, title: 'Open Perspectives', desc: 'We welcome diverse viewpoints and uncomfortable truths. Growth happens outside your comfort zone.' },
+  { Icon: FeatherIcon, title: 'ការសរសេរពិតប្រាកដ', desc: 'រាល់អត្ថបទត្រូវបានសរសេរដោយភាពស្មោះត្រង់ និងការយកចិត្តទុកដាក់ — គ្មានការទាក់ទាញចុចបោកបញ្ឆោត គ្មានល្បិច SEO មានតែគំនិតពិតៗពីមនុស្សពិតៗប៉ុណ្ណោះ' },
+  { Icon: HeartIcon, title: 'បង្កើតឡើងដោយក្តីស្រឡាញ់', desc: 'ប្លក់នេះមានអត្ថិភាព ព្រោះយើងជឿថារឿងរ៉ាវដែលមានអត្ថន័យ គួរតែមានទីកន្លែងស្រស់ស្អាតសម្រាប់រស់នៅ។ រាល់ភីកសែលត្រូវបានរចនាឡើងដោយចេតនាច្បាស់លាស់' },
+  { Icon: LockOpenIcon, title: 'ឥតគិតថ្លៃជារៀងរហូត', desc: 'គ្មានការបិទខ្ទប់ការចូលប្រើ គ្មានការជាវសេវា គ្មានចំណាយលាក់កំបាំង។ រាល់រឿងរ៉ាវអាចចូលអានបានដោយសេរីសម្រាប់គ្រប់គ្នា ជានិច្ច.' },
+  { Icon: UsersIcon, title: 'សហគមន៍ជាអាទិភាពដំបូង', desc: "យើងមិនមែនកំពុងបង្កើតអ្នកទស្សនាទេ — យើងកំពុងថែរក្សា និងអភិវឌ្ឍសហគមន៍អ្នកអាន និងអ្នកសរសេរ ដែលយកចិត្តទុកដាក់លើភាពជ្រាលជ្រៅ" },
+  { Icon: LeafIcon, title: 'មាតិកាយឺត', desc: 'យើងបដិសេធសម្ពាធក្នុងការបោះពុម្ពផ្សាយរៀងរាល់ថ្ងៃ។ គុណភាពលើសបរិមាណ ជានិច្ច។ រាល់រឿងរ៉ាវទទួលបានពេលវេលាដែលវាសមនឹងទទួល.' },
+  { Icon: CompassIcon, title: 'ទស្សនៈបើកចំហ', desc: 'យើងស្វាគមន៍ទស្សនៈចម្រុះ និងការពិតដែលអាចធ្វើឲ្យមិនស្រួលចិត្ត។ ការរីកចម្រើនកើតឡើងនៅក្រៅតំបន់សុវត្ថិភាពរបស់អ្នក.' },
 ];
 
 const DIFFERENT_ITEMS = [
-  { Icon: BanIcon, title: 'No Algorithms, No Noise', desc: "Your feed is not manipulated. Stories appear in chronological order — the way reading was meant to work." },
-  { Icon: SpellCheckIcon, title: 'Edited with Care', desc: 'Every submission is reviewed for quality, not for "engagement potential." We care about craft, not clicks.' },
-  { Icon: PaletteIcon, title: 'Beautiful Reading Experience', desc: 'Clean typography, thoughtful layout, zero distractions. Reading on Inkwell feels like holding a well-made book.' },
-  { Icon: HandHeartIcon, title: 'Writer-Friendly', desc: 'Writers retain full ownership. No restrictive contracts, no content locks. Your words are always yours.' },
+  { Icon: BanIcon, title: 'គ្មាន Algorithms គ្មានភាពរំខាន', desc: "ព័ត៌មាននៅលើទំព័ររបស់អ្នកមិនត្រូវបានកែប្រែ ឬគ្រប់គ្រងដោយអាល់ហ្គូរីធម៍ទេ។ រឿងរ៉ាវបង្ហាញតាមលំដាប់ពេលវេលា — ដូចជារបៀបដែលការអានគួរតែដំណើរការ." },
+  { Icon: SpellCheckIcon, title: 'កែសម្រួលដោយការយកចិត្តទុកដាក់', desc: 'រាល់ការផ្ញើអត្ថបទត្រូវបានពិនិត្យដោយផ្តោតលើគុណភាព មិនមែនលើសក្តានុពលការចូលរួមទេ។ យើងយកចិត្តទុកដាក់លើសិល្បៈនៃការសរសេរ មិនមែនចំនួនការចុចទេ' },
+  { Icon: PaletteIcon, title: 'បទពិសោធន៍អានដ៏ល្អផូរផង', desc: 'អក្សររចនាស្អាត ប្លង់ដែលបានគិតគូរ និងគ្មានភាពរំខាន។ ការអាននៅលើ Inkwell មានអារម្មណ៍ដូចជាកំពុងកាន់សៀវភៅដែលបានផលិតយ៉ាងប្រណិត' },
+  { Icon: HandHeartIcon, title: 'ងាយស្រួលសម្រាប់អ្នកសរសេរ', desc: 'អ្នកសរសេររក្សាសិទ្ធិជាម្ចាស់ពេញលេញ។ គ្មានកិច្ចសន្យាដាក់កម្រិត គ្មានការចាក់សោមាតិកា។ ពាក្យសម្តីរបស់អ្នកគឺជារបស់អ្នកជានិច្ច' },
 ];
 
 const TIMELINE = [
@@ -86,20 +86,20 @@ export default function AboutPage() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/70"></div>
         </div>
         <div className="absolute top-10 right-10 sm:top-16 sm:right-20 pointer-events-none">
-          <span className="block font-display text-[5rem] sm:text-[8rem] font-black text-white/[0.05] leading-none select-none rotate-6">ABOUT</span>
+          <span className="block font-display text-[5rem] sm:text-[8rem] font-black text-white/[0.05] leading-none select-none rotate-6">អំពី</span>
         </div>
         <div className="relative z-10 w-full max-w-6xl mx-auto px-5 sm:px-8 text-center py-20">
           <RevealSection>
             <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-orange-500 text-white text-[11px] font-bold uppercase tracking-widest rounded-full mb-6">
               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
-              About Us
+              អំពីយើង
             </span>
             <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-[1.1] mb-4">
-              The Story Behind<br />
-              <span className="text-orange-300">Our Journey</span>
+              រឿងរ៉ាវនៅពីក្រោយ<br />
+              <span className="text-orange-300">ដំណើររបស់យើង</span>
             </h1>
             <p className="text-white/50 text-sm sm:text-base leading-relaxed max-w-lg mx-auto">
-              A space for thoughtful writing, honest perspectives, and the quiet moments that shape who we are.
+              កន្លែងសម្រាប់ការសរសេរដោយគិតពិចារណា ទស្សនៈស្មោះត្រង់ និងពេលវេលាស្ងប់ស្ងាត់ដែលបង្កើតអត្តសញ្ញាណរបស់យើង
             </p>
           </RevealSection>
         </div>
@@ -118,29 +118,29 @@ export default function AboutPage() {
                   <img src="https://raw.githubusercontent.com/bounthorn1/Image/refs/heads/main/Gemini_Generated_Image_3op6603op6603op6.png" alt="Coffee cup" className="w-full h-full object-cover" />
                 </div>
                 <div className="absolute -top-4 -left-4 bg-orange-500 text-white rounded-xl px-4 py-3 shadow-lg shadow-orange-500/30">
-                  <p className="text-2xl font-display font-black leading-none">Est.</p>
+                  <p className="text-2xl font-display font-black leading-none">បង្កើតនៅឆ្នាំ.</p>
                   <p className="text-xs font-semibold uppercase tracking-widest">2023</p>
                 </div>
               </div>
             </RevealSection>
             <RevealSection delay={150}>
               <div>
-                <span className="text-orange-500 text-[11px] font-bold uppercase tracking-widest">Who We Are</span>
+                <span className="text-orange-500 text-[11px] font-bold uppercase tracking-widest">យើងជានរណា</span>
                 <h2 className="font-display text-2xl sm:text-3xl font-black text-gray-900 dark:text-white leading-[1.15] mt-2 mb-5">
-                  More Than Just a Blog —<br />
-                  <span className="text-orange-500">A Sanctuary for Stories</span>
+                  លើសពីប្លក់ធម្មតា —<br />
+                  <span className="text-orange-500">ទីសក្ការៈសម្រាប់រឿងរ៉ាវ</span>
                 </h2>
                 <div className="space-y-4 text-gray-500 dark:text-slate-400 leading-relaxed text-sm sm:text-base">
-                  <p>BOUNTHORN.Blog was born from a simple belief: that in a world obsessed with speed and virality, there should be a place where writing can breathe. Where a story does not need to compete for attention — it just needs to be true.</p>
-                  <p>We started as a personal journal, a quiet corner to untangle thoughts about life, creativity, loss, and wonder. But something happened along the way — other people started relating. They started sharing their own stories. And what was once a whisper became a conversation.</p>
-                  <p>Today, Inkwell is a growing community of writers and readers who believe that the best stories are not the loudest — they are the most honest. We do not chase trends. We do not optimize for algorithms. We write what matters.</p>
+                  <p>BOUNTHORN.Blog បានកើតឡើងពីជំនឿដ៏សាមញ្ញមួយ៖ នៅក្នុងពិភពលោកដែលផ្តោតលើល្បឿន និងភាពល្បីភ្លាមៗ គួរតែមានកន្លែងមួយដែលការសរសេរអាចដកដង្ហើមបាន។ កន្លែងដែលរឿងរ៉ាវមិនចាំបាច់ប្រកួតប្រជែងដើម្បីទទួលបានការយកចិត្តទុកដាក់ — វាត្រឹមតែត្រូវការភាពពិតប៉ុណ្ណោះ</p>
+                  <p>យើងបានចាប់ផ្តើមដូចជាកំណត់ហេតុផ្ទាល់ខ្លួន មុំស្ងប់ស្ងាត់មួយសម្រាប់រៀបចំគំនិតអំពីជីវិត ការច្នៃប្រឌិត ការបាត់បង់ និងភាពអស្ចារ្យ។ ប៉ុន្តែមានអ្វីមួយកើតឡើងនៅលើផ្លូវនោះ — មនុស្សផ្សេងទៀតបានចាប់ផ្តើមមានអារម្មណ៍ពាក់ព័ន្ធ។ ពួកគេចាប់ផ្តើមចែករំលែករឿងរ៉ាវរបស់ពួកគេផ្ទាល់។ ហើយអ្វីដែលធ្លាប់ជាសំឡេងខ្សឹបខ្សៀវ បានក្លាយជាការសន្ទនា</p>
+                  <p>សព្វថ្ងៃ Inkwell គឺជាសហគមន៍កំពុងរីកចម្រើននៃអ្នកសរសេរ និងអ្នកអាន ដែលជឿថារឿងរ៉ាវល្អបំផុតមិនមែនជារឿងដែលមានសំឡេងខ្លាំងបំផុតទេ — តែជារឿងដែលស្មោះត្រង់បំផុត។ យើងមិនតាមដាននិន្នាការ។ យើងមិនបង្កើនប្រសិទ្ធភាពសម្រាប់អាល់ហ្គូរីធម៍ទេ។ យើងសរសេរអ្វីដែលមានអត្ថន័យពិតប្រាកដ​ ។.</p>
                 </div>
                 <div className="flex flex-wrap gap-4 mt-8">
                   <Link to="/blog" className="inline-flex items-center gap-2 px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm rounded-xl transition-colors shadow-lg shadow-orange-500/25">
-                    Read Our Stories <ArrowRightIcon />
+                    អានរឿងរ៉ាវរបស់យើង <ArrowRightIcon />
                   </Link>
                   <Link to="/create" className="inline-flex items-center gap-2 px-6 py-3 border-2 border-gray-200 dark:border-slate-700 text-gray-700 dark:text-slate-300 font-semibold text-sm rounded-xl hover:border-orange-300 hover:text-orange-600 dark:hover:border-orange-500 dark:hover:text-orange-400 transition-all">
-                    <PenNibIcon /> Share Your Story
+                    <PenNibIcon /> ចែករំលែករឿងរ៉ាវរបស់អ្នក
                   </Link>
                 </div>
               </div>
@@ -179,9 +179,9 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto px-5 sm:px-8">
           <RevealSection>
             <div className="text-center max-w-xl mx-auto mb-12">
-              <span className="text-orange-500 text-[11px] font-bold uppercase tracking-widest">What We Believe</span>
-              <h2 className="font-display text-2xl sm:text-3xl font-black text-gray-900 dark:text-white mt-2 mb-4">Our Core Values</h2>
-              <p className="text-gray-500 dark:text-slate-400 text-sm sm:text-base leading-relaxed">These are not just words on a page — they are the principles that guide every story we publish and every decision we make.</p>
+              <span className="text-orange-500 text-[11px] font-bold uppercase tracking-widest">អ្វីដែលយើងជឿជាក់</span>
+              <h2 className="font-display text-2xl sm:text-3xl font-black text-gray-900 dark:text-white mt-2 mb-4">តម្លៃស្នូលរបស់យើង</h2>
+              <p className="text-gray-500 dark:text-slate-400 text-sm sm:text-base leading-relaxed">Tទាំងនេះមិនមែនគ្រាន់តែជាពាក្យនៅលើទំព័រទេ — វាជាគោលការណ៍ដែលណែនាំរាល់រឿងរ៉ាវដែលយើងផ្សព្វផ្សាយ និងរាល់ការសម្រេចចិត្តដែលយើងធ្វើ ។.</p>
             </div>
           </RevealSection>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
@@ -206,10 +206,10 @@ export default function AboutPage() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <RevealSection>
               <div>
-                <span className="text-orange-500 text-[11px] font-bold uppercase tracking-widest">Why Inkwell</span>
+                <span className="text-orange-500 text-[11px] font-bold uppercase tracking-widest">ហេតុអ្វីដែល BOUNTHORN</span>
                 <h2 className="font-display text-2xl sm:text-3xl font-black text-gray-900 dark:text-white leading-[1.15] mt-2 mb-5">
-                  What Makes Us<br />
-                  <span className="text-orange-500">Different</span>
+                  អ្វីដែលធ្វើឱ្យយើងខុស<br />
+                  <span className="text-orange-500">ពីគ្នា</span>
                 </h2>
                 <div className="space-y-6">
                   {DIFFERENT_ITEMS.map((item, i) => (
@@ -240,9 +240,9 @@ export default function AboutPage() {
                       <QuoteLeftIcon />
                     </div>
                     <div>
-                      <p className="text-xs font-semibold text-gray-800 dark:text-white italic">"The best writing</p>
-                      <p className="text-xs font-semibold text-gray-800 dark:text-white italic">feels like talking</p>
-                      <p className="text-xs font-semibold text-gray-800 dark:text-white italic">to a friend."</p>
+                      <p className="text-xs font-semibold text-gray-800 dark:text-white italic">"ការសរសេរល្អបំផុត</p>
+                      <p className="text-xs font-semibold text-gray-800 dark:text-white italic">មានអារម្មណ៍ដូចជាកំពុងនិយាយ</p>
+                      <p className="text-xs font-semibold text-gray-800 dark:text-white italic">មានអារម្មណ៍ដូចជាកំពុងនិយាយ."</p>
                     </div>
                   </div>
                 </div>
@@ -257,9 +257,9 @@ export default function AboutPage() {
         <div className="max-w-3xl mx-auto px-5 sm:px-8">
           <RevealSection>
             <div className="text-center mb-12">
-              <span className="text-orange-500 text-[11px] font-bold uppercase tracking-widest">Our Journey</span>
-              <h2 className="font-display text-2xl sm:text-3xl font-black text-gray-900 dark:text-white mt-2 mb-4">How It All Started</h2>
-              <p className="text-gray-500 dark:text-slate-400 text-sm sm:text-base leading-relaxed">From a personal journal to a growing community — here is the story of Inkwell, chapter by chapter.</p>
+              <span className="text-orange-500 text-[11px] font-bold uppercase tracking-widest">ដំណើររបស់យើង</span>
+              <h2 className="font-display text-2xl sm:text-3xl font-black text-gray-900 dark:text-white mt-2 mb-4">របៀបដែលវាទាំងអស់បានចាប់ផ្តើម</h2>
+              <p className="text-gray-500 dark:text-slate-400 text-sm sm:text-base leading-relaxed">ពីកំណត់ហេតុផ្ទាល់ខ្លួន ទៅកាន់សហគមន៍កំពុងរីកចម្រើន — នេះជារឿងរ៉ាវរបស់ BOUNTHORN BlOG ជាប្រការទៅមួយប្រការ</p>
             </div>
           </RevealSection>
           <div className="relative">

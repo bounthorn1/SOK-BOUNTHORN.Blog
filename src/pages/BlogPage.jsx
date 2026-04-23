@@ -143,24 +143,24 @@ export default function BlogPage() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/70"></div>
         </div>
         <div className="absolute top-12 left-8 sm:top-16 sm:left-16 pointer-events-none">
-          <span className="block font-display text-[4rem] sm:text-[6rem] font-black text-white/[0.06] leading-none select-none -rotate-6">BLOG</span>
+          <span className="block font-display text-[4rem] sm:text-[6rem] font-black text-white/[0.06] leading-none select-none -rotate-6">ប្លក់</span>
         </div>
         <div className="absolute bottom-12 right-8 sm:bottom-16 sm:right-16 pointer-events-none">
-          <span className="block font-display text-[3rem] sm:text-[5rem] font-black text-white/[0.04] leading-none select-none rotate-6">READ</span>
+          <span className="block font-display text-[3rem] sm:text-[5rem] font-black text-white/[0.04] leading-none select-none rotate-6">អាន</span>
         </div>
         <div className="relative z-10 w-full max-w-6xl mx-auto px-5 sm:px-8 text-center py-20">
           <RevealSection>
             <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-orange-500 text-white text-[11px] font-bold uppercase tracking-widest rounded-full mb-6">
-              <FileLinesIcon size={12} /> Our Blog
+              <FileLinesIcon size={12} /> ប្លក់របស់យើង
             </span>
-            <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-[1.1] mb-4">Latest News & Articles</h1>
-            <p className="text-white/55 text-sm sm:text-base leading-relaxed max-w-xl mx-auto">Are You Tired Of The Typical Tourist Destinations And Looking To Step Out Of Your Comfort Zone</p>
+            <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-[1.1] mb-4">ព័ត៌មាន និងអត្ថបទថ្មីៗបំផុត</h1>
+            <p className="text-white/55 text-sm sm:text-base leading-relaxed max-w-xl mx-auto">តើអ្នកធុញទ្រាន់នឹងគោលដៅទេសចរណ៍ធម្មតាៗ ហើយកំពុងស្វែងរកការចេញក្រៅពីតំបន់សុវត្ថិភាពរបស់អ្នកមែនទេ?</p>
             <div className="flex items-center justify-center gap-6 mt-8">
-              <div className="text-center"><p className="text-2xl sm:text-3xl font-display font-black text-white">{posts.length}</p><p className="text-[10px] uppercase tracking-[0.2em] text-white/40 font-bold">Stories</p></div>
+              <div className="text-center"><p className="text-2xl sm:text-3xl font-display font-black text-white">{posts.length}</p><p className="text-[10px] uppercase tracking-[0.2em] text-white/40 font-bold">រឿងរ៉ាវ</p></div>
               <span className="w-px h-8 bg-white/15"></span>
-              <div className="text-center"><p className="text-2xl sm:text-3xl font-display font-black text-white">{tags.length}</p><p className="text-[10px] uppercase tracking-[0.2em] text-white/40 font-bold">Topics</p></div>
+              <div className="text-center"><p className="text-2xl sm:text-3xl font-display font-black text-white">{tags.length}</p><p className="text-[10px] uppercase tracking-[0.2em] text-white/40 font-bold">ប្រធានបទ</p></div>
               <span className="w-px h-8 bg-white/15"></span>
-              <div className="text-center"><p className="text-2xl sm:text-3xl font-display font-black text-white">Free</p><p className="text-[10px] uppercase tracking-[0.2em] text-white/40 font-bold">Always</p></div>
+              <div className="text-center"><p className="text-2xl sm:text-3xl font-display font-black text-white">Free</p><p className="text-[10px] uppercase tracking-[0.2em] text-white/40 font-bold">ជានិច្ច</p></div>
             </div>
           </RevealSection>
         </div>
@@ -255,13 +255,13 @@ export default function BlogPage() {
                 {/* Total */}
                 <div className="lg:col-span-2 flex flex-col justify-center px-6 sm:px-7 py-6 sm:py-7 border-b sm:border-b-0 sm:border-r border-gray-100 dark:border-slate-700">
                   <label className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest text-gray-400 dark:text-slate-500 mb-3"><span className="text-purple-400"><BookOpenIcon /></span> Total</label>
-                  <span className="text-sm text-gray-800 dark:text-white">{filtered.length} Stories</span>
+                  <span className="text-sm text-gray-800 dark:text-white">{filtered.length} រឿងរ៉ាវ</span>
                 </div>
 
                 {/* Search button */}
                 <div className="lg:col-span-2 flex items-center p-4 sm:p-5">
                   <button onClick={handleSearch} className="w-full py-5 sm:py-6 bg-orange-500 hover:bg-orange-600 text-white font-bold text-base sm:text-lg transition-all rounded-xl flex items-center justify-center gap-3 shadow-lg shadow-orange-500/30 hover:shadow-xl hover:shadow-orange-500/40 hover:scale-[1.02] active:scale-[0.98]">
-                    <SearchIconLg /> <span>Search</span>
+                    <SearchIconLg /> <span>ស្វែងរក</span>
                   </button>
                 </div>
               </div>
@@ -293,7 +293,7 @@ export default function BlogPage() {
           <div className="max-w-6xl mx-auto px-5 sm:px-8">
             <RevealSection>
               <div className="flex flex-wrap items-center gap-2 p-3 bg-orange-50 dark:bg-orange-500/10 rounded-xl border border-orange-100 dark:border-orange-500/20">
-                <span className="text-xs font-semibold text-orange-600 dark:text-orange-400 mr-1">Active filters:</span>
+                <span className="text-xs font-semibold text-orange-600 dark:text-orange-400 mr-1">តម្រងដែលកំពុងប្រើ:</span>
                 {activeTag && (
                   <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-white dark:bg-slate-800 text-orange-600 dark:text-orange-400 text-xs font-medium rounded-lg border border-orange-200 dark:border-orange-500/20">
                     <TagSmallIcon size={9} />{activeTag}
@@ -312,7 +312,7 @@ export default function BlogPage() {
                     <button onClick={() => setSortBy('latest')} className="ml-0.5 text-orange-400 hover:text-orange-600"><XMarkIcon size={9} /></button>
                   </span>
                 )}
-                <button onClick={clearFilters} className="ml-auto text-xs font-semibold text-orange-600 dark:text-orange-400 hover:underline">Clear All</button>
+                <button onClick={clearFilters} className="ml-auto text-xs font-semibold text-orange-600 dark:text-orange-400 hover:underline">លុបទាំងអស់</button>
               </div>
             </RevealSection>
           </div>
@@ -326,7 +326,7 @@ export default function BlogPage() {
             <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
               <div>
                 <h2 className="font-display text-xl sm:text-2xl font-black text-gray-900 dark:text-white">
-                  {activeTag ? <span>Stories about <span className="text-orange-500 capitalize">{activeTag}</span></span> : search ? 'Search Results' : 'All Stories'}
+                  {activeTag ? <span>រឿងរ៉ាវអំពី <span className="text-orange-500 capitalize">{activeTag}</span></span> : search ? 'លទ្ធផលស្វែងរក' : 'រឿងរ៉ាវទាំងអស់'}
                   <span className="text-base font-normal text-gray-400 dark:text-slate-500 ml-2">({filtered.length})</span>
                 </h2>
               </div>
@@ -392,7 +392,7 @@ export default function BlogPage() {
               <h3 className="font-display text-lg font-bold text-gray-900 dark:text-white mb-2">{search || activeTag ? 'No stories found' : 'No stories yet'}</h3>
               <p className="text-sm text-gray-500 dark:text-slate-400 mb-5">{search || activeTag ? 'Try adjusting your search or filters.' : 'Start sharing your thoughts with the world.'}</p>
               {!(search || activeTag) && (
-                <Link to="/create" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-orange-500 text-white font-medium text-sm hover:bg-orange-600 transition-colors"><PenNibIcon /> Write your first story</Link>
+                <Link to="/create" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-orange-500 text-white font-medium text-sm hover:bg-orange-600 transition-colors"><PenNibIcon /> សរសេររឿងដំបូងរបស់អ្នក</Link>
               )}
             </div>
           )}
@@ -405,11 +405,11 @@ export default function BlogPage() {
           <div className="absolute inset-0"><img src="https://picsum.photos/seed/blog-newsletter-cta/1600/500.jpg" alt="" className="w-full h-full object-cover mix-blend-overlay opacity-10" /></div>
           <div className="relative z-10 max-w-4xl mx-auto px-5 sm:px-8 py-16 sm:py-20 text-center">
             <div className="w-14 h-14 rounded-2xl bg-white/15 flex items-center justify-center mx-auto mb-6 text-white"><EnvelopeIcon /></div>
-            <h2 className="font-display text-2xl sm:text-3xl font-black text-white leading-tight mb-3">Never Miss a Story</h2>
-            <p className="text-orange-100 text-sm sm:text-base max-w-lg mx-auto mb-8">Get the latest articles delivered straight to your inbox. No spam, no noise — just thoughtful stories worth reading.</p>
+            <h2 className="font-display text-2xl sm:text-3xl font-black text-white leading-tight mb-3">កុំឲ្យខកខានរឿងរ៉ាវណាមួយឲ្យសោះ</h2>
+            <p className="text-orange-100 text-sm sm:text-base max-w-lg mx-auto mb-8">ទទួលបានអត្ថបទថ្មីៗបំផុតផ្ញើទៅកាន់ប្រអប់អ៊ីមែលរបស់អ្នកដោយផ្ទាល់។ គ្មានសារឥតប្រយោជន៍ គ្មានភាពរំខាន — មានតែរឿងរ៉ាវដែលមានអត្ថន័យ និងគួរអានប៉ុណ្ណោះ.</p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 max-w-md mx-auto">
-              <Link to="/create" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-white text-orange-500 font-semibold text-sm rounded-xl hover:bg-gray-100 transition-colors shadow-lg"><PenNibIcon /> Start Writing</Link>
-              <Link to="/" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-white/15 text-white font-semibold text-sm rounded-xl hover:bg-white/25 transition-colors border border-white/20">Back to Home</Link>
+              <Link to="/create" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-white text-orange-500 font-semibold text-sm rounded-xl hover:bg-gray-100 transition-colors shadow-lg"><PenNibIcon /> ចាប់ផ្តើមសរសេរ</Link>
+              <Link to="/" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-white/15 text-white font-semibold text-sm rounded-xl hover:bg-white/25 transition-colors border border-white/20">ត្រឡប់ទៅទំព័រដើម</Link>
             </div>
           </div>
         </section>

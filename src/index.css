@@ -1,5 +1,5 @@
 @font-face {
-  font-family: Odor-MeanChey; ;
+  font-family: Odor-MeanChey;
   src: url(../src/assets/font/OdorMeanChey.ttf);
 }
 @import "tailwindcss";
@@ -7,8 +7,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --font-display: 'Playfair Display', serif;
-  --font-body: 'Source Sans 3', sans-serif;
+  --font-display: 'Noto Sans Khmer', serif;
+  --font-body: 'Noto Sans Khmer', sans-serif;
   --color-accent: #C45D3E;
   --color-accent-light: #D4724F;
   --color-accent-dark: #A84B30;
@@ -25,7 +25,7 @@
 }
 
 * { box-sizing: border-box; }
-body { font-family: 'Source Sans 3', sans-serif; margin: 0; }
+body { font-family: 'Noto Sans Khmer', sans-serif; margin: 0; }
 html.dark body { background: var(--color-warm-950); color: var(--color-warm-200); }
 html:not(.dark) body { background: var(--color-warm-50); color: var(--color-ink); }
 
