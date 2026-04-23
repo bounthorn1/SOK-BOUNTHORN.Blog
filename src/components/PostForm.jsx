@@ -16,9 +16,9 @@ export default function PostForm({ mode, initialData, onSubmit, onCancel }) {
 
   const validate = () => {
     const e = {};
-    if (form.title.trim().length < 3) e.title = 'Title must be at least 3 characters';
-    if (form.content.trim().length < 10) e.content = 'Content must be at least 10 characters';
-    if (form.author.trim().length < 2) e.author = 'Author name is required';
+    if (form.title.trim().length < 3) e.title = 'ចំណងជើងត្រូវមានយ៉ាងហោចណាស់ 3 តួអក្សរ';
+    if (form.content.trim().length < 10) e.content = 'មាតិកាត្រូវមានយ៉ាងហោចណាស់ 10 តួអក្សរ';
+    if (form.author.trim().length < 2) e.author = 'ឈ្មោះអ្នកនិពន្ធ ត្រូវបានបញ្ចូល';
     setErrors(e);
     return Object.keys(e).length === 0;
   };
@@ -58,17 +58,17 @@ export default function PostForm({ mode, initialData, onSubmit, onCancel }) {
   return (
     <form onSubmit={handleSubmit} className="max-w-2xl mx-auto space-y-7">
       <div>
-        <label className="block text-xs font-semibold uppercase tracking-widest text-ink-muted dark:text-warm-300 mb-2">Title</label>
-        <input type="text" value={form.title} onChange={(e) => setField('title', e.target.value)} placeholder="Give your story a title..." className={`${inputClass('title')} text-lg font-display font-semibold`} />
+        <label className="block text-xs font-semibold uppercase tracking-widest text-ink-muted dark:text-warm-300 mb-2">ចំណងជើង</label>
+        <input type="text" value={form.title} onChange={(e) => setField('title', e.target.value)} placeholder="ផ្តល់ឱ្យរឿងរបស់អ្នកចំណងជើង..." className={`${inputClass('title')} text-lg font-display font-semibold`} />
         {errors.title && <p className="text-red-500 text-xs mt-1.5">{errors.title}</p>}
       </div>
       <div>
-        <label className="block text-xs font-semibold uppercase tracking-widest text-ink-muted dark:text-warm-300 mb-2">Author</label>
-        <input type="text" value={form.author} onChange={(e) => setField('author', e.target.value)} placeholder="Your name..." className={`${inputClass('author')} text-sm`} />
+        <label className="block text-xs font-semibold uppercase tracking-widest text-ink-muted dark:text-warm-300 mb-2">អ្នកនិពន្ធ</label>
+        <input type="text" value={form.author} onChange={(e) => setField('author', e.target.value)} placeholder="ឈ្មោះរបស់អ្នក..." className={`${inputClass('author')} text-sm`} />
         {errors.author && <p className="text-red-500 text-xs mt-1.5">{errors.author}</p>}
       </div>
       <div>
-        <label className="block text-xs font-semibold uppercase tracking-widest text-ink-muted dark:text-warm-300 mb-2">Cover Image URL <span className="normal-case tracking-normal font-normal text-ink-faint">(optional)</span></label>
+        <label className="block text-xs font-semibold uppercase tracking-widest text-ink-muted dark:text-warm-300 mb-2">URL រូបភាពលើស <span className="normal-case tracking-normal font-normal text-ink-faint">(ជាក់ស្តែង)</span></label>
         <input type="url" value={form.image} onChange={(e) => setField('image', e.target.value)} placeholder="https://example.com/image.jpg" className={`${inputClass()} text-sm`} />
         {form.image && (
           <div className="mt-3 rounded-xl overflow-hidden aspect-[2/1] bg-warm-100 dark:bg-warm-800">
@@ -77,15 +77,15 @@ export default function PostForm({ mode, initialData, onSubmit, onCancel }) {
         )}
       </div>
       <div>
-        <label className="block text-xs font-semibold uppercase tracking-widest text-ink-muted dark:text-warm-300 mb-2">Tags <span className="normal-case tracking-normal font-normal text-ink-faint">(comma-separated)</span></label>
+        <label className="block text-xs font-semibold uppercase tracking-widest text-ink-muted dark:text-warm-300 mb-2">ស្លាក <span className="normal-case tracking-normal font-normal text-ink-faint">(បំបែកដោយសញ្ញាក្បៀស ( , ))</span></label>
         <input type="text" value={form.tags} onChange={(e) => setField('tags', e.target.value)} placeholder="writing, creativity, life" className={`${inputClass()} text-sm`} />
       </div>
       <div>
         <div className="flex items-center justify-between mb-2">
-          <label className="block text-xs font-semibold uppercase tracking-widest text-ink-muted dark:text-warm-300">Content</label>
-          <span className="text-xs text-ink-faint dark:text-warm-300">{form.content.length} characters</span>
+          <label className="block text-xs font-semibold uppercase tracking-widest text-ink-muted dark:text-warm-300">មាតិកា</label>
+          <span className="text-xs text-ink-faint dark:text-warm-300">{form.content.length} តួអក្សរ</span>
         </div>
-        <textarea value={form.content} onChange={(e) => setField('content', e.target.value)} placeholder="Write your story..." rows="12" className={`${inputClass('content')} text-sm leading-relaxed resize-y py-4`} />
+        <textarea value={form.content} onChange={(e) => setField('content', e.target.value)} placeholder="សរសេររឿងរបស់អ្នក..." rows="12" className={`${inputClass('content')} text-sm leading-relaxed resize-y py-4`} />
         {errors.content && <p className="text-red-500 text-xs mt-1.5">{errors.content}</p>}
       </div>
       <div className="flex items-center gap-3">
@@ -93,15 +93,15 @@ export default function PostForm({ mode, initialData, onSubmit, onCancel }) {
           <input type="checkbox" checked={form.published} onChange={(e) => setField('published', e.target.checked)} className="sr-only peer" />
           <div className="w-10 h-[22px] bg-warm-200 dark:bg-warm-800 peer-focus:ring-2 peer-focus:ring-accent/10 rounded-full peer peer-checked:bg-accent transition-colors after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-[18px] after:w-[18px] after:transition-all peer-checked:after:translate-x-[18px]"></div>
         </label>
-        <span className="text-sm text-ink-muted dark:text-warm-300">Publish immediately</span>
+        <span className="text-sm text-ink-muted dark:text-warm-300">ផ្សព្វផ្សាយភ្លាមៗ</span>
       </div>
       <div className="flex gap-3 pt-2">
         <button type="submit" disabled={submitting} className="px-7 py-3 rounded-xl bg-accent text-white font-medium text-sm hover:bg-accent-dark disabled:opacity-50 disabled:cursor-not-allowed transition-colors flex items-center gap-2">
           {submitting && <i className="fa-solid fa-spinner fa-spin text-xs"></i>}
-          {mode === 'create' ? 'Publish Story' : 'Update Story'}
+          {mode === 'create' ? 'ផ្សព្វផ្សាយរឿងរ៉ាវ' : 'ធ្វើបច្ចុប្បន្នភាពរឿងរ៉ាវ'}
         </button>
         <button type="button" onClick={onCancel} className="px-7 py-3 rounded-xl border border-warm-200 dark:border-warm-800 text-ink-muted dark:text-warm-300 font-medium text-sm hover:bg-warm-100 dark:hover:bg-warm-800 transition-colors">
-          Cancel
+          បោះបង់
         </button>
       </div>
     </form>

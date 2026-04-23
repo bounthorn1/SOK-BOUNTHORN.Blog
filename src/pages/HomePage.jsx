@@ -511,7 +511,7 @@ export default function HomePage() {
                               <div className="w-7 h-7 rounded-full overflow-hidden bg-gray-200 dark:bg-slate-700 shrink-0"><img src={`https://picsum.photos/seed/${post.author}/56/56.jpg`} alt="" className="w-full h-full object-cover" /></div>
                               <div className="min-w-0"><p className="text-xs font-semibold text-gray-700 dark:text-white truncate">{post.author}</p><p className="text-[10px] text-gray-400 dark:text-slate-500">{formatDate(post.created_at)}</p></div>
                             </div>
-                            <span className="text-orange-500 text-xs font-semibold flex items-center gap-1 shrink-0 group-hover:gap-2 transition-all">Read <ArrowRightIcon size={10} /></span>
+                            <span className="text-orange-500 text-xs font-semibold flex items-center gap-1 shrink-0 group-hover:gap-2 transition-all">អាន <ArrowRightIcon size={10} /></span>
                           </div>
                         </div>
                       </article>

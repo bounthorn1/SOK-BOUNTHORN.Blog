@@ -21,7 +21,7 @@ export function AuthProvider({ children }) {
       (u) => u.username === username && u.password === password
     );
     if (!found) {
-      setAuthError('Invalid username or password');
+      setAuthError('ឈ្មោះអ្នកប្រើប្រាស់ ឬពាក្យសម្ងាត់មិនត្រឹមត្រូវ');
       return false;
     }
     const safeUser = {
@@ -39,7 +39,7 @@ export function AuthProvider({ children }) {
     setAuthError('');
     const users = await getUsers();
     if (users.find((u) => u.username === username)) {
-      setAuthError('Username already taken');
+      setAuthError('ឈ្មោះអ្នកប្រើប្រាស់ត្រូវបានគេប្រើរួចហើយ');
       return false;
     }
     const newUser = await createUser({

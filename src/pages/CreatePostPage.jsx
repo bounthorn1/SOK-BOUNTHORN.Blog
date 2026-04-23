@@ -22,10 +22,10 @@ export default function CreatePostPage() {
     <div className="max-w-4xl mx-auto px-5 sm:px-8 py-12">
       <RevealSection className="mb-10">
         <h1 className="font-display text-3xl sm:text-4xl font-black text-ink dark:text-warm-200 mb-2">
-          Write a story
+          សរសេររឿងរ៉ាវ
         </h1>
         <p className="text-ink-muted dark:text-warm-300 text-sm">
-          Share your thoughts with the world.
+          ចែករំលែកគ្រាប់យ៉ាងរបស់អ្នកជាមួយពិភពលោក។
         </p>
       </RevealSection>
       <RevealSection delay={100}>

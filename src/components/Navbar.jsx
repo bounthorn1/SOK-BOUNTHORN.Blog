@@ -119,12 +119,12 @@ export default function Navbar() {
                   </div>
                   <span className="text-sm font-medium text-ink dark:text-warm-200">{user.name}</span>
                   <button onClick={() => { logout(); navigate('/'); }} className="px-3.5 py-2 rounded-lg text-sm font-medium text-ink-muted dark:text-warm-300 hover:bg-warm-100 dark:hover:bg-warm-800 transition-colors">
-                    Sign out
+                    ចាកចេញ
                   </button>
                 </div>
               ) : (
                 <Link to="/login" className="px-4 py-2 rounded-lg text-sm font-medium bg-accent text-white hover:bg-accent-dark transition-colors">
-                  Sign in
+                  ចូលគណនី
                 </Link>
               )}
             </div>
@@ -152,7 +152,7 @@ export default function Navbar() {
                 </div>
               ) : (
                 <Link to="/login" className="px-3.5 py-2 rounded-lg text-sm font-medium bg-accent text-white hover:bg-accent-dark transition-colors">
-                  Sign in
+                  ចូលគណនី
                 </Link>
               )}
             </div>
