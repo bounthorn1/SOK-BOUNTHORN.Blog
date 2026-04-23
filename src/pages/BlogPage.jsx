@@ -173,9 +173,9 @@ export default function BlogPage() {
             <div className="bg-white dark:bg-slate-900 rounded-[20px] sm:rounded-2xl shadow-2xl shadow-black/20 overflow-hidden border border-gray-100/50 dark:border-slate-700/50">
               <div className="flex items-center bg-gradient-to-r from-orange-500 to-orange-600">
                 {[
-                  { key: 'stories', label: 'Stories', Icon: FileLinesIcon },
-                  { key: 'topics', label: 'Topics', Icon: TagsIcon },
-                  { key: 'authors', label: 'Authors', Icon: UserPenIcon },
+                  { key: 'stories', label: 'រឿងរ៉ាវ', Icon: FileLinesIcon },
+                  { key: 'topics', label: 'ប្រធានបទ', Icon: TagsIcon },
+                  { key: 'authors', label: 'អ្នកនិពន្ធ', Icon: UserPenIcon },
                 ].map((tab) => (
                   <button key={tab.key} onClick={() => setSearchTab(tab.key)} className={`flex items-center gap-2.5 px-6 sm:px-8 py-4 text-sm font-semibold transition-all relative ${searchTab === tab.key ? 'text-white bg-white/15' : 'text-white/60 hover:text-white hover:bg-white/10'}`}>
                     <tab.Icon /> <span>{tab.label}</span>
@@ -189,10 +189,10 @@ export default function BlogPage() {
                 <div className="lg:col-span-4 flex flex-col justify-center px-6 sm:px-8 py-6 sm:py-7 border-b sm:border-b-0 sm:border-r border-gray-100 dark:border-slate-700">
                   <label className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest text-gray-400 dark:text-slate-500 mb-3">
                     <span className="text-orange-400"><SearchIcon size={12} /></span>
-                    {searchTab === 'stories' ? 'Keywords' : searchTab === 'topics' ? 'Topic Name' : 'Author Name'}
+                    {searchTab === 'stories' ? 'ពាក្យគន្លឹះ' : searchTab === 'topics' ? 'ឈ្មោះប្រធានបទ' : 'ឈ្មោះអ្នកនិពន្ធ'}
                   </label>
                   <div className="relative">
-                    <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} onKeyDown={handleKeyDown} placeholder={searchTab === 'stories' ? 'What are you looking for...' : searchTab === 'topics' ? 'Search topics...' : 'Search authors...'} className="w-full bg-transparent text-gray-800 dark:text-white text-lg sm:text-xl placeholder:text-gray-300 dark:placeholder:text-slate-600 focus:outline-none" />
+                    <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} onKeyDown={handleKeyDown} placeholder={searchTab === 'stories' ? 'តើអ្នកកំពុងស្វែងរកអ្វី...' : searchTab === 'topics' ? 'ស្វែងរកប្រធានបទ...' : 'ស្វែងរកអ្នកនិពន្ធ...'} className="w-full bg-transparent text-gray-800 dark:text-white text-lg sm:text-xl placeholder:text-gray-300 dark:placeholder:text-slate-600 focus:outline-none" />
                     {search && <button onClick={() => setSearch('')} className="absolute right-0 top-1/2 -translate-y-1/2 text-gray-300 hover:text-gray-500 transition-colors p-1"><CircleXIcon size={18} /></button>}
                   </div>
                 </div>

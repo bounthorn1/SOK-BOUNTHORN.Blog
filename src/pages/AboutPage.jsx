@@ -68,11 +68,11 @@ const DIFFERENT_ITEMS = [
 ];
 
 const TIMELINE = [
-  { year: '2023', title: 'The First Draft', desc: 'Started as a personal journal — a quiet corner to process thoughts about life, creativity, and the world.' },
-  { year: '2023', title: 'Opening the Doors', desc: 'Invited friends to write. The first guest stories arrived, and something special started to form.' },
-  { year: '2024', title: 'Finding Our Voice', desc: 'Defined what makes us different: depth over speed, meaning over metrics, people over algorithms.' },
-  { year: '2024', title: 'Growing Together', desc: 'Reached our first milestone of readers. The community grew organically — one thoughtful story at a time.' },
-  { year: '2025', title: 'The Next Chapter', desc: 'Expanding topics, improving the reading experience, and staying true to what matters most: the stories.' },
+  { year: '2023', title: 'សេចក្តីព្រាងដំបូង', desc: 'បានចាប់ផ្តើមដូចជាកំណត់ហេតុផ្ទាល់ខ្លួន — មុំស្ងប់ស្ងាត់មួយសម្រាប់រៀបចំគំនិតអំពីជីវិត ការច្នៃប្រឌិត និងពិភពលោក' },
+  { year: '2023', title: 'ការបើកទ្វារ', desc: 'Iបានអញ្ជើញមិត្តភក្តិឲ្យសរសេរ។ រឿងរ៉ាវពីអ្នកអញ្ជើញដំបូងបានមកដល់ ហើយអ្វីមួយពិសេសបានចាប់ផ្តើមកើតឡើង' },
+  { year: '2024', title: 'ស្វែងរកសំឡេងរបស់យើង', desc: 'បានកំណត់អ្វីដែលធ្វើឲ្យយើងខុសប្លែក៖ ភាពជ្រាលជ្រៅលើសល្បឿន អត្ថន័យលើសលេខស្ថិតិ មនុស្សលើសអាល់ហ្គូរីធម៍' },
+  { year: '2024', title: 'រីកចម្រើនជាមួយគ្នា', desc: 'បានឈានដល់ចំណុចសំខាន់ដំបូងនៃអ្នកអាន។ សហគមន៍បានរីកចម្រើនដោយធម្មជាតិ — មួយរឿងរ៉ាវដែលមានការគិតគូរម្តងៗ' },
+  { year: '2025', title: 'ជំពូកបន្ទាប់', desc: 'ពង្រីកប្រធានបទ កែលម្អបទពិសោធន៍ការអាន និងរក្សាភាពស្មោះត្រង់ចំពោះអ្វីដែលសំខាន់បំផុត៖ រឿងរ៉ាវ' },
 ];
 
 export default function AboutPage() {
@@ -291,7 +291,7 @@ export default function AboutPage() {
           <div className="relative z-10 max-w-4xl mx-auto px-5 sm:px-8 text-center">
             <div className="text-orange-500/40 mb-6"><QuoteLeftIcon /></div>
             <blockquote className="font-display text-xl sm:text-2xl lg:text-3xl font-bold text-white leading-snug mb-6">
-              "Inkwell is the only blog I read where I feel like the writer actually cares about what they are saying. Every piece leaves me thinking for days."
+              "BOUNTHORN.BLOG គឺជាប្លក់តែមួយគត់ដែលខ្ញុំអាន ហើយខ្ញុំមានអារម្មណ៍ថាអ្នកសរសេរពិតជាយកចិត្តទុកដាក់ចំពោះអ្វីដែលពួកគេកំពុងនិយាយ រាល់អត្ថបទធ្វើឲ្យខ្ញុំគិតបន្តរយៈពេលជាច្រើនថ្ងៃ"
             </blockquote>
             <div className="flex items-center justify-center gap-3">
               <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-white/20">
@@ -312,16 +312,16 @@ export default function AboutPage() {
           <RevealSection>
             <div className="text-center mb-12">
               <span className="text-orange-500 text-[11px] font-bold uppercase tracking-widest">FAQ</span>
-              <h2 className="font-display text-2xl sm:text-3xl font-black text-gray-900 dark:text-white mt-2">Common Questions</h2>
+              <h2 className="font-display text-2xl sm:text-3xl font-black text-gray-900 dark:text-white mt-2">សំណួរដែលសួរញឹកញាប់</h2>
             </div>
           </RevealSection>
           <div className="space-y-4">
             {[
-              { q: 'Can anyone write for Inkwell?', a: "Yes! We welcome submissions from everyone. Whether you are a seasoned writer or sharing your first story, we review every piece with the same care and respect." },
-              { q: 'Is it really free?', a: 'Completely. No paywalls, no premium tiers, no "free trial" tricks. Every story on Inkwell is free to read, always has been, always will be.' },
-              { q: 'How do you choose which stories to publish?', a: 'We look for authenticity, craft, and depth. We do not care about trending topics or keyword density. If a story is honest and well-written, it has a home here.' },
-              { q: 'Do writers keep ownership of their work?', a: 'Absolutely. Writers retain full copyright. We never lock your content or ask for exclusive rights. Your words are always yours.' },
-              { q: 'How can I support Inkwell?', a: 'The best way is to read, share stories you love, and consider writing your own. Word of mouth is the lifeblood of independent publishing.' },
+              { q: 'តើអ្នកណាក៏អាចសរសេរឲ្យ BOUNTHORN.BLOG បានទេ?', a: "បាទ/ចាស! យើងស្វាគមន៍ការផ្ញើអត្ថបទពីគ្រប់គ្នា។ មិនថាអ្នកជាអ្នកសរសេរដែលមានបទពិសោធន៍ ឬកំពុងចែករំលែករឿងរ៉ាវដំបូងរបស់អ្នកទេ យើងពិនិត្យរាល់អត្ថបទដោយការយកចិត្តទុកដាក់ និងការគោរពដូចគ្នា ។" },
+              { q: 'តើវាពិតជាឥតគិតថ្លៃមែនទេ?', a: 'ពេញលេញ។ គ្មានការបិទខ្ទប់ការចូលប្រើ គ្មានកម្រិតសេវាពិសេស (premium tiers) គ្មានល្បិច “សាកល្បងឥតគិតថ្លៃ” ទេ។ រាល់រឿងរ៉ាវនៅលើ Inkwell អាចអានបានដោយសេរី ជានិច្ច — បានតែងតែជាដូច្នេះ និងនឹងនៅតែជាដូច្នេះជានិច្ច' },
+              { q: 'តើអ្នកជ្រើសរើសរឿងរ៉ាវណាដែលត្រូវផ្សាយយ៉ាងដូចម្តេច?', a: 'យើងស្វែងរកភាពពិតប្រាកដ សិល្បៈនៃការសរសេរ និងភាពជ្រាលជ្រៅ។ យើងមិនយកចិត្តទុកដាក់លើប្រធានបទដែលកំពុងពេញនិយម ឬកម្រិតពាក្យគន្លឹះទេ។ ប្រសិនបើរឿងរ៉ាវមានភាពស្មោះត្រង់ និងសរសេរបានល្អ វានឹងមានទីកន្លែងនៅទីនេះ' },
+              { q: 'តើអ្នកសរសេររក្សាសិទ្ធិជាម្ចាស់លើស្នាដៃរបស់ពួកគេទេ?', a: 'ពិតជាមែន។ អ្នកសរសេររក្សាសិទ្ធិជាម្ចាស់ពេញលេញ។ យើងមិនដែលបិទខ្ទប់មាតិកា ឬស្នើសុំសិទ្ធិផ្តាច់មុខទេ។ ពាក្យសម្តីរបស់អ្នកគឺជារបស់អ្នកជានិច្ច' },
+              { q: 'តើខ្ញុំអាចគាំទ្រ BOUNTHORN.BLOG ដោយរបៀបណា?', a: 'វិធីល្អបំផុតគឺការអាន ចែករំលែករឿងរ៉ាវដែលអ្នកស្រឡាញ់ និងពិចារណាសរសេររឿងរបស់អ្នកផ្ទាល់។ ការប្រាប់បន្តពីមាត់មួយទៅមាត់មួយ គឺជាខ្សែជីវិតសំខាន់របស់ការបោះពុម្ពផ្សាយឯករាជ្យ' },
             ].map((faq, i) => (
               <RevealSection key={i} delay={i * 60}>
                 <details className="group bg-slate-50 dark:bg-slate-800 rounded-xl border border-gray-100 dark:border-slate-700 overflow-hidden">
@@ -350,15 +350,15 @@ export default function AboutPage() {
           </div>
           <div className="relative z-10 max-w-4xl mx-auto px-5 sm:px-8 py-16 sm:py-20 flex flex-col sm:flex-row items-center justify-between gap-8">
             <div className="text-center sm:text-left">
-              <h2 className="font-display text-2xl sm:text-3xl font-black text-white leading-tight mb-2">Ready to Join?</h2>
-              <p className="text-orange-100 text-sm sm:text-base">Start reading or share your first story — it is free.</p>
+              <h2 className="font-display text-2xl sm:text-3xl font-black text-white leading-tight mb-2">ត្រៀមខ្លួនរួចហើយដើម្បីចូលរួមឬនៅ?</h2>
+              <p className="text-orange-100 text-sm sm:text-base">ចាប់ផ្តើមអាន ឬចែករំលែករឿងរ៉ាវដំបូងរបស់អ្នក — វាឥតគិតថ្លៃ</p>
             </div>
             <div className="flex gap-3 shrink-0">
               <Link to="/blog" className="inline-flex items-center gap-2 px-7 py-3.5 bg-white text-orange-500 font-semibold text-sm rounded-xl hover:bg-gray-100 transition-colors shadow-lg">
-                <BookOpenIcon /> Read Stories
+                <BookOpenIcon /> អានរឿងរ៉ាវ
               </Link>
               <Link to="/create" className="inline-flex items-center gap-2 px-7 py-3.5 bg-white/15 text-white font-semibold text-sm rounded-xl hover:bg-white/25 transition-colors border border-white/20">
-                <PenNibIcon /> Start Writing
+                <PenNibIcon /> ចាប់ផ្តើមសរសេរ
               </Link>
             </div>
           </div>

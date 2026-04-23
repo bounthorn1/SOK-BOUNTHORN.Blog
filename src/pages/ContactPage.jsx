@@ -67,9 +67,9 @@ const LinkedInIcon = () => (
 );
 
 const CONTACT_INFO = [
-  { Icon: EmailIcon, label: 'Email Us', value: 'sokbounthorn18@gmail.com', sub: 'We reply within 24 hours' },
-  { Icon: LocationIcon, label: 'Location', value: 'Phnom Penh Cambodia', sub: 'Working remotely worldwide' },
-  { Icon: ClockIcon, label: 'Response Time', value: 'Within 24 Hours', sub: 'Monday - Friday' },
+  { Icon: EmailIcon, label: 'ផ្ញើអ៊ីមែលមកយើង', value: 'sokbounthorn18@gmail.com', sub: 'យើងឆ្លើយតបក្នុងរយៈពេល 24 ម៉ោង' },
+  { Icon: LocationIcon, label: 'ទីតាំង', value: 'ភ្នំពេញ ប្រទេសកម្ពុជា', sub: 'ធ្វើការពីចម្ងាយទូទាំងពិភពលោក' },
+  { Icon: ClockIcon, label: 'ពេលវេលាឆ្លើយតប', value: 'ក្នុងរយៈពេល 24 ម៉ោង', sub: 'ថ្ងៃចន្ទ - ថ្ងៃសុក្រ' },
 ];
 
 const SOCIAL_LINKS = [
@@ -77,12 +77,13 @@ const SOCIAL_LINKS = [
   { Icon: InstagramIcon, label: 'Instagram', href: '#' },
   { Icon: GithubIcon, label: 'GitHub', href: '#' },
   { Icon: LinkedInIcon, label: 'LinkedIn', href: '#' },
+  
 ];
 
 const QUICK_INFO = [
-  { Icon: QuestionIcon, title: 'General Questions', email: 'sokbounthorn18@gmail.com' },
-  { Icon: PenNibIcon, title: 'Submit a Story', email: 'wsokbounthorn18@gmail.com' },
-  { Icon: BugIcon, title: 'Report a Bug', email: 'sokbounthorn18@gmail.com' },
+  { Icon: QuestionIcon, title: 'សំណួរទូទៅ', email: 'sokbounthorn18@gmail.com' },
+  { Icon: PenNibIcon, title: 'ដាក់ប្រកាសរឿង', email: 'sokbounthorn18@gmail.com' },
+  { Icon: BugIcon, title: 'រាយការណ៍កំហុស', email: 'sokbounthorn18@gmail.com' },
 ];
 
 export default function ContactPage() {
@@ -113,19 +114,19 @@ export default function ContactPage() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/70"></div>
         </div>
         <div className="absolute top-10 left-10 sm:top-16 sm:left-20 pointer-events-none">
-          <span className="block font-display text-[5rem] sm:text-[8rem] font-black text-white/[0.05] leading-none select-none -rotate-6">SAY</span>
+          <span className="block font-display text-[5rem] sm:text-[8rem] font-black text-white/[0.05] leading-none select-none -rotate-6">និយាយ</span>
         </div>
         <div className="absolute bottom-10 right-10 sm:bottom-16 sm:right-20 pointer-events-none">
-          <span className="block font-display text-[4rem] sm:text-[6rem] font-black text-white/[0.04] leading-none select-none rotate-6">HI</span>
+          <span className="block font-display text-[4rem] sm:text-[6rem] font-black text-white/[0.04] leading-none select-none rotate-6">សួស្តី</span>
         </div>
         <div className="relative z-10 w-full max-w-6xl mx-auto px-5 sm:px-8 text-center py-20">
           <RevealSection>
             <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-orange-500 text-white text-[11px] font-bold uppercase tracking-widest rounded-full mb-6">
               <EmailIcon />
-              Contact
+              ទំនាក់ទំនង
             </span>
-            <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-[1.1] mb-4">Get In Touch</h1>
-            <p className="text-white/50 text-sm sm:text-base leading-relaxed max-w-lg mx-auto">Have a question, feedback, or just want to say hello? We would love to hear from you.</p>
+            <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-[1.1] mb-4">ទាក់ទងមកយើង</h1>
+            <p className="text-white/50 text-sm sm:text-base leading-relaxed max-w-lg mx-auto">មានសំណួរ មតិយោបល់ ឬគ្រាន់តែចង់និយាយសួស្តីមែនទេ? យើងរីករាយណាស់ក្នុងការស្តាប់ពីអ្នក</p>
           </RevealSection>
         </div>
       </section>
@@ -156,9 +157,9 @@ export default function ContactPage() {
           <div className="grid lg:grid-cols-5 gap-10 lg:gap-14">
             <div className="lg:col-span-3">
               <RevealSection>
-                <span className="text-orange-500 text-[11px] font-bold uppercase tracking-widest">Send a Message</span>
-                <h2 className="font-display text-2xl sm:text-3xl font-black text-gray-900 dark:text-white leading-[1.15] mt-2 mb-2">We Are All Ears</h2>
-                <p className="text-gray-500 dark:text-slate-400 text-sm mb-8">Fill out the form below and we will get back to you as soon as possible.</p>
+                <span className="text-orange-500 text-[11px] font-bold uppercase tracking-widest">ផ្ញើសារ</span>
+                <h2 className="font-display text-2xl sm:text-3xl font-black text-gray-900 dark:text-white leading-[1.15] mt-2 mb-2">យើងរាល់គ្នាមានសំណើរ</h2>
+                <p className="text-gray-500 dark:text-slate-400 text-sm mb-8">បំពេញទម្រង់ខាងក្រោម ហើយយើងនឹងត្រឡប់មកវិញដល់អ្នកនៅតែឆាប់ជាទេ។</p>
               </RevealSection>
 
               {sent && (
@@ -166,8 +167,8 @@ export default function ContactPage() {
                   <div className="mb-6 p-4 bg-emerald-50 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20 rounded-xl flex items-center gap-3">
                     <div className="w-8 h-8 rounded-lg bg-emerald-500 flex items-center justify-center shrink-0 text-white"><CheckIcon /></div>
                     <div>
-                      <p className="text-sm font-semibold text-emerald-700 dark:text-emerald-400">Message sent successfully!</p>
-                      <p className="text-xs text-emerald-600 dark:text-emerald-500">We will get back to you within 24 hours.</p>
+                      <p className="text-sm font-semibold text-emerald-700 dark:text-emerald-400">បានផ្ញើសារជោគជ័យហើយ!</p>
+                      <p className="text-xs text-emerald-600 dark:text-emerald-500">យើងនឹងត្រឡប់មកវិញដល់អ្នកនៅតែឆាប់ជាទេ។</p>
                     </div>
                   </div>
                 </RevealSection>
@@ -177,14 +178,14 @@ export default function ContactPage() {
                 <form onSubmit={handleSubmit} className="space-y-5">
                   <div className="grid sm:grid-cols-2 gap-5">
                     <div>
-                      <label className="block text-[11px] font-bold uppercase tracking-widest text-gray-400 dark:text-slate-500 mb-2">Your Name</label>
+                      <label className="block text-[11px] font-bold uppercase tracking-widest text-gray-400 dark:text-slate-500 mb-2">ឈ្មោះរបស់អ្នក</label>
                       <div className="relative">
                         <div className="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-300 dark:text-slate-600"><UserIcon /></div>
                         <input type="text" name="name" value={form.name} onChange={handleChange} required placeholder="John Doe" className="w-full pl-10 pr-4 py-3.5 rounded-xl border border-gray-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-gray-800 dark:text-white text-sm placeholder:text-gray-300 dark:placeholder:text-slate-600 focus:border-orange-400 focus:ring-2 focus:ring-orange-500/10 focus:bg-white dark:focus:bg-slate-900 transition-all outline-none" />
                       </div>
                     </div>
                     <div>
-                      <label className="block text-[11px] font-bold uppercase tracking-widest text-gray-400 dark:text-slate-500 mb-2">Email Address</label>
+                      <label className="block text-[11px] font-bold uppercase tracking-widest text-gray-400 dark:text-slate-500 mb-2">អាសយដ្ឋានអ៊ីមែល</label>
                       <div className="relative">
                         <div className="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-300 dark:text-slate-600"><EnvelopeFormIcon /></div>
                         <input type="email" name="email" value={form.email} onChange={handleChange} required placeholder="john@example.com" className="w-full pl-10 pr-4 py-3.5 rounded-xl border border-gray-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-gray-800 dark:text-white text-sm placeholder:text-gray-300 dark:placeholder:text-slate-600 focus:border-orange-400 focus:ring-2 focus:ring-orange-500/10 focus:bg-white dark:focus:bg-slate-900 transition-all outline-none" />
@@ -192,14 +193,14 @@ export default function ContactPage() {
                     </div>
                   </div>
                   <div>
-                    <label className="block text-[11px] font-bold uppercase tracking-widest text-gray-400 dark:text-slate-500 mb-2">Subject</label>
+                    <label className="block text-[11px] font-bold uppercase tracking-widest text-gray-400 dark:text-slate-500 mb-2">ប្រធានបទ</label>
                     <div className="relative">
                       <div className="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-300 dark:text-slate-600"><TagIcon /></div>
                       <input type="text" name="subject" value={form.subject} onChange={handleChange} required placeholder="What is this about?" className="w-full pl-10 pr-4 py-3.5 rounded-xl border border-gray-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-gray-800 dark:text-white text-sm placeholder:text-gray-300 dark:placeholder:text-slate-600 focus:border-orange-400 focus:ring-2 focus:ring-orange-500/10 focus:bg-white dark:focus:bg-slate-900 transition-all outline-none" />
                     </div>
                   </div>
                   <div>
-                    <label className="block text-[11px] font-bold uppercase tracking-widest text-gray-400 dark:text-slate-500 mb-2">Message</label>
+                    <label className="block text-[11px] font-bold uppercase tracking-widest text-gray-400 dark:text-slate-500 mb-2">សារ</label>
                     <div className="relative">
                       <div className="absolute left-3.5 top-3.5 text-gray-300 dark:text-slate-600"><PenIcon /></div>
                       <textarea name="message" value={form.message} onChange={handleChange} required rows="6" placeholder="Tell us what is on your mind..." className="w-full pl-10 pr-4 py-3.5 rounded-xl border border-gray-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-gray-800 dark:text-white text-sm placeholder:text-gray-300 dark:placeholder:text-slate-600 focus:border-orange-400 focus:ring-2 focus:ring-orange-500/10 focus:bg-white dark:focus:bg-slate-900 transition-all outline-none resize-none"></textarea>
@@ -207,9 +208,9 @@ export default function ContactPage() {
                   </div>
                   <button type="submit" disabled={sending} className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-orange-500 hover:bg-orange-600 disabled:bg-orange-400 text-white font-bold text-sm rounded-xl transition-all shadow-lg shadow-orange-500/25 hover:shadow-xl hover:shadow-orange-500/30 hover:scale-[1.01] active:scale-[0.99]">
                     {sending ? (
-                      <><span className="animate-spin"><SpinnerIcon /></span><span>Sending...</span></>
+                      <><span className="animate-spin"><SpinnerIcon /></span><span>កំពុងផ្ញើ...</span></>
                     ) : (
-                      <><SendIcon /><span>Send Message</span></>
+                      <><SendIcon /><span>ផ្ញើសារ</span></>
                     )}
                   </button>
                 </form>
@@ -225,14 +226,14 @@ export default function ContactPage() {
                       <div className="bg-white dark:bg-slate-900 rounded-xl px-5 py-3 shadow-lg flex items-center gap-3">
                         <div className="w-8 h-8 rounded-lg bg-orange-500 flex items-center justify-center text-white"><LocationPinIcon /></div>
                         <div>
-                          <p className="text-xs font-bold text-gray-800 dark:text-white">Phnom Penh</p>
-                          <p className="text-[10px] text-gray-400">Cambodia</p>
+                          <p className="text-xs font-bold text-gray-800 dark:text-white">ទីក្រុងភ្នំពេញ</p>
+                          <p className="text-[10px] text-gray-400">ប្រទេសកម្ពុជា</p>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div className="bg-slate-50 dark:bg-slate-800 rounded-2xl p-6 border border-gray-100 dark:border-slate-700">
-                    <h3 className="font-display text-sm font-bold text-gray-900 dark:text-white mb-4">Quick Info</h3>
+                    <h3 className="font-display text-sm font-bold text-gray-900 dark:text-white mb-4">ព័ត៌មានរហ័ស</h3>
                     <div className="space-y-4">
                       {QUICK_INFO.map((item, i) => (
                         <div key={i} className="flex items-start gap-3">
@@ -246,7 +247,7 @@ export default function ContactPage() {
                     </div>
                   </div>
                   <div className="bg-slate-50 dark:bg-slate-800 rounded-2xl p-6 border border-gray-100 dark:border-slate-700">
-                    <h3 className="font-display text-sm font-bold text-gray-900 dark:text-white mb-4">Follow Us</h3>
+                    <h3 className="font-display text-sm font-bold text-gray-900 dark:text-white mb-4">តាមដានយើង</h3>
                     <div className="flex gap-2">
                       {SOCIAL_LINKS.map((social, i) => (
                         <a key={i} href={social.href} aria-label={social.label} className="w-10 h-10 rounded-xl bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 flex items-center justify-center text-gray-400 dark:text-slate-500 hover:text-orange-500 hover:border-orange-300 dark:hover:border-orange-500 hover:bg-orange-50 dark:hover:bg-orange-500/10 transition-all duration-200 hover:scale-110">
@@ -267,16 +268,16 @@ export default function ContactPage() {
         <div className="max-w-3xl mx-auto px-5 sm:px-8">
           <RevealSection>
             <div className="text-center mb-10">
-              <span className="text-orange-500 text-[11px] font-bold uppercase tracking-widest">Before You Ask</span>
-              <h2 className="font-display text-2xl sm:text-3xl font-black text-gray-900 dark:text-white mt-2 mb-4">Common Questions</h2>
+              <span className="text-orange-500 text-[11px] font-bold uppercase tracking-widest">មុនពេលអ្នកសួរ</span>
+              <h2 className="font-display text-2xl sm:text-3xl font-black text-gray-900 dark:text-white mt-2 mb-4">សំណួរដែលសួរញឹកញាប់</h2>
             </div>
           </RevealSection>
           <div className="space-y-3">
             {[
-              { q: 'How long does it take to get a response?', a: 'We typically respond within 24 hours on business days. For urgent matters, we try to get back to you even sooner.' },
-              { q: 'Can I submit a guest post?', a: 'Absolutely! Send us an email at sokbounthorn18@gmail.com with a brief pitch and we will review it within a few days.' },
-              { q: 'Do you offer advertising or sponsorships?', a: 'We keep Inkwell ad-free to preserve the reading experience. We do not accept sponsored content at this time.' },
-              { q: 'I found a bug on the site. What should I do?', a: 'Please email sokbounthorn18@gmail.com with a description of the issue and we will fix it as soon as possible.' },
+              { q: 'តើត្រូវចំណាយពេលប៉ុន្មានដើម្បីទទួលបានការឆ្លើយតប?', a: 'យើងធម្មតាឆ្លើយតបក្នុងរយៈពេល 24 ម៉ោងក្នុងថ្ងៃធ្វើការ។ សម្រាប់ករណីបន្ទាន់ យើងព្យាយាមឆ្លើយតបឲ្យលឿនជាងនេះផងដែរ' },
+              { q: 'តើខ្ញុំអាចផ្ញើអត្ថបទជាភ្ញៀវបានទេ?', a: 'យើងធម្មតាឆ្លើយតបក្នុងរយៈពេល 24 ម៉ោងក្នុងថ្ងៃធ្វើការ។ សម្រាប់ករណីបន្ទាន់ យើងព្យាយាមឆ្លើយតបឲ្យលឿនជាងនេះផងដែរ' },
+              { q: 'តើអ្នកមានផ្តល់ការផ្សព្វផ្សាយពាណិជ្ជកម្ម ឬការឧបត្ថម្ភទេ?', a: 'យើងរក្សា BOUNTHORN.BLOG ឲ្យគ្មានពាណិជ្ជកម្ម ដើម្បីរក្សាបទពិសោធន៍ការអាន។ យើងមិនទទួលយកមាតិកាឧបត្ថម្ភនៅពេលនេះទេ' },
+              { q: 'ខ្ញុំបានរកឃើញកំហុស (bug) នៅលើវេបសាយ តើខ្ញុំគួរធ្វើដូចម្តេច?', a: 'សូមផ្ញើអ៊ីមែលទៅ sokbounthorn18@gmail.com ជាមួយនឹងការពិពណ៌នាអំពីបញ្ហានិងយើងនឹងជាប់ទាក់ទាក់ក្នុងការជួសជាមួយវា។' },
             ].map((faq, i) => (
               <RevealSection key={i} delay={i * 60}>
                 <details className="group bg-white dark:bg-slate-900 rounded-xl border border-gray-200 dark:border-slate-700 overflow-hidden">
@@ -303,12 +304,12 @@ export default function ContactPage() {
           <div className="absolute inset-0"><img src="https://picsum.photos/seed/contact-cta-warm/1600/500.jpg" alt="" className="w-full h-full object-cover mix-blend-overlay opacity-10" /></div>
           <div className="relative z-10 max-w-4xl mx-auto px-5 sm:px-8 py-16 sm:py-20 flex flex-col sm:flex-row items-center justify-between gap-8">
             <div className="text-center sm:text-left">
-              <h2 className="font-display text-2xl sm:text-3xl font-black text-white leading-tight mb-2">Prefer Reading First?</h2>
-              <p className="text-orange-100 text-sm sm:text-base">Check out our latest stories before reaching out.</p>
+              <h2 className="font-display text-2xl sm:text-3xl font-black text-white leading-tight mb-2">ចូលចិត្តអានជាមុនមែនទេ?</h2>
+              <p className="text-orange-100 text-sm sm:text-base">សូមពិនិត្យមើលរឿងរ៉ាវថ្មីៗបំផុតរបស់យើង មុនពេលទាក់ទងមកយើង.</p>
             </div>
             <div className="flex gap-3 shrink-0">
-              <Link to="/blog" className="inline-flex items-center gap-2 px-7 py-3.5 bg-white text-orange-500 font-semibold text-sm rounded-xl hover:bg-gray-100 transition-colors shadow-lg"><BookOpenIcon /> Browse Stories</Link>
-              <Link to="/" className="inline-flex items-center gap-2 px-7 py-3.5 bg-white/15 text-white font-semibold text-sm rounded-xl hover:bg-white/25 transition-colors border border-white/20">Back to Home</Link>
+              <Link to="/blog" className="inline-flex items-center gap-2 px-7 py-3.5 bg-white text-orange-500 font-semibold text-sm rounded-xl hover:bg-gray-100 transition-colors shadow-lg"><BookOpenIcon /> រកមើលរឿងរ៉ាវ</Link>
+              <Link to="/" className="inline-flex items-center gap-2 px-7 py-3.5 bg-white/15 text-white font-semibold text-sm rounded-xl hover:bg-white/25 transition-colors border border-white/20">ត្រឡប់ទៅទំព័រដើម</Link>
             </div>
           </div>
         </section>

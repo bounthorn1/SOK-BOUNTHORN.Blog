@@ -114,28 +114,31 @@ const CATEGORY_CARDS = [
   { key: 'writing', label: 'Writing', icon: PenNibIcon, image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/mP4nwOjPPQuvoOb4/temp-background-A0xwolJVq4S8JyMe.png' },
   { key: 'food', label: 'Food', icon: UtensilsIcon, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Kyuq8zbAWFG2k8zyi5riecH_GxuznHzJbQ&s' },
   { key: 'reading', label: 'Reading', icon: BookOpenIcon, image: 'https://newhorizoninternationalschool.in/wp-content/uploads/2024/09/boy-is-reading-book-front-book-that-has-word-world-it-1024x574.jpg' },
+  { key: 'travel', label: 'Travel', icon: BookOpenIcon, image: 'https://kohsantepheapdaily.com.kh/wp-content/images/2022/01/38aceca78bc7a91a535d221f38a285c6.jpg' },
+  { key: 'natural', label: 'Natural', icon: BookOpenIcon, image: 'https://s9.kh1.co/__image/w=650,h=366,q=100/83/83166cdf48ea89c0ae615b50a59413c62ff35cfb.png' },
+  
 ];
 
 const TESTIMONIALS = [
   {
     name: 'Sarah Chen',
-    location: 'San Francisco',
+    location: 'Cambodia',
     avatar: 'https://picsum.photos/seed/rev-sarah-c/80/80.jpg',
-    text: 'The stories here feel like conversations with a wise friend. Every piece leaves me thinking for days.',
+    text: 'រឿងរ៉ាវនៅទីនេះមានអារម្មណ៍ដូចជាការសន្ទនាជាមួយមិត្តឆ្លាតវៃម្នាក់។ រាល់អត្ថបទធ្វើឲ្យខ្ញុំគិតបន្តរយៈពេលជាច្រើនថ្ងៃ ក្រោយពេលអាន។ ខ្ញុំស្រឡាញ់ការរចនាដែលស្រស់ស្អាត និងងាយស្រួលប្រើ។',
     rating: 5,
   },
   {
     name: 'Marcus Williams',
-    location: 'London',
+    location: 'Cambodia',
     avatar: 'https://picsum.photos/seed/rev-marc-c/80/80.jpg',
-    text: "Finally a space where writing isn't optimized for clicks. It's optimized for meaning.",
+    text: "ទីបំផុតមានកន្លែងមួយ ដែលការសរសេរមិនត្រូវបានបង្កើនប្រសិទ្ធភាពសម្រាប់ការចុចទេ ប៉ុន្តែសម្រាប់អត្ថន័យនិងការតភ្ជាប់។ ខ្ញុំស្រឡាញ់ការរចនាដែលស្រស់ស្អាត និងងាយស្រួលប្រើ។",
     rating: 5,
   },
   {
     name: 'Yuki Tanaka',
-    location: 'Tokyo',
+    location: 'Cambodia',
     avatar: 'https://picsum.photos/seed/rev-yuki-c/80/80.jpg',
-    text: 'I come here when I need to slow down. The design, the words — everything breathes.',
+    text: 'ខ្ញុំមកទីនេះពេលដែលខ្ញុំត្រូវការធ្វើអោយយឺតចុះ។ ការរចនា ពាក្យសម្តី — អ្វីៗទាំងអស់មានអារម្មណ៍ដកដង្ហើមបាន។ ខ្ញុំស្រឡាញ់ការរចនាដែលស្រស់ស្អាត និងងាយស្រួលប្រើ។',
     rating: 5,
   },
 ];
@@ -240,9 +243,9 @@ export default function HomePage() {
               <div className="bg-white rounded-[20px] sm:rounded-2xl shadow-2xl shadow-black/25 overflow-hidden border border-white/50">
                 <div className="flex items-center bg-gradient-to-r from-orange-500 to-orange-600">
                   {[
-                    { key: 'stories', label: 'Stories', Icon: FileLinesIcon },
-                    { key: 'topics', label: 'Topics', Icon: TagsIcon },
-                    { key: 'authors', label: 'Authors', Icon: UserPenIcon },
+                    { key: 'stories', label: 'រឿងរ៉ាវ', Icon: FileLinesIcon },
+                    { key: 'topics', label: 'ប្រធានបទ', Icon: TagsIcon },
+                    { key: 'authors', label: 'អ្នកនិពន្ធ', Icon: UserPenIcon },
                   ].map((tab) => (
                     <button key={tab.key} onClick={() => setSearchTab(tab.key)} className={`flex items-center gap-2.5 px-6 sm:px-8 py-4 text-sm font-semibold transition-all relative ${searchTab === tab.key ? 'text-white bg-white/15' : 'text-white/60 hover:text-white hover:bg-white/10'}`}>
                       <tab.Icon size={14} />
@@ -255,10 +258,10 @@ export default function HomePage() {
                   <div className="lg:col-span-4 flex flex-col justify-center px-6 sm:px-8 py-7 sm:py-8 border-b sm:border-b-0 sm:border-r border-gray-100">
                     <label className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest text-gray-400 mb-3">
                       <span className="text-orange-400"><SearchIcon size={12} /></span>
-                      {searchTab === 'stories' ? 'Keywords' : searchTab === 'topics' ? 'Topic Name' : 'Author Name'}
+                      {searchTab === 'stories' ? 'ពាក្យគន្លឹះ' : searchTab === 'topics' ? 'ឈ្មោះប្រធានបទ' : 'ឈ្មោះអ្នកនិពន្ធ'}
                     </label>
                     <div className="relative">
-                      <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} onKeyDown={handleKeyDown} placeholder={searchTab === 'stories' ? 'What are you looking for...' : searchTab === 'topics' ? 'Search topics...' : 'Search authors...'} className="w-full bg-transparent text-gray-800 text-lg sm:text-xl placeholder:text-gray-300 focus:outline-none" />
+                      <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} onKeyDown={handleKeyDown} placeholder={searchTab === 'stories' ? 'តើអ្នកកំពុងស្វែងរកអ្វី?' : searchTab === 'topics' ? 'ស្វែងរកប្រធានបទ...' : 'ស្វែងរកអ្នកនិពន្ធ...'} className="w-full bg-transparent text-gray-800 text-lg sm:text-xl placeholder:text-gray-300 focus:outline-none" />
                       {search && (<button onClick={() => setSearch('')} className="absolute right-0 top-1/2 -translate-y-1/2 text-gray-300 hover:text-gray-500 transition-colors p-1"><CircleXIcon size={18} /></button>)}
                     </div>
                   </div>
@@ -348,8 +351,8 @@ export default function HomePage() {
                 <h2 className="font-display text-3xl sm:text-4xl lg:text-[2.75rem] font-black text-gray-900 dark:text-white leading-[1.1] mb-5">តោះស្វែងយល់ពីពិភពលោក<br /><span className="text-orange-500 dark:text-orange-400">ជាមួយនឹងរឿងរបស់យើង</span></h2>
                 <p className="text-gray-500 dark:text-slate-400 text-sm sm:text-base leading-relaxed max-w-md mx-auto mb-8">យើងបង្កើតគ្រប់ផ្នែកទាំងអស់ឱ្យលើសពីការរំពឹងទុក ដោយផ្តល់នូវទស្សនវិស័យប្រកបដោយការគិតលើជីវិត ភាពច្នៃប្រឌិត និងពេលវេលាដ៏ស្រស់ស្អាតនៅចន្លោះនោះ។</p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-                  <button onClick={scrollToStories} className="inline-flex items-center gap-2 px-7 py-3.5 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm rounded-xl transition-colors shadow-lg shadow-orange-500/25">Browse Stories <ArrowRightIcon size={12} /></button>
-                  <Link to="/create" className="inline-flex items-center gap-2 px-7 py-3.5 border-2 border-gray-200 dark:border-slate-700 text-gray-700 dark:text-slate-300 font-semibold text-sm rounded-xl hover:border-orange-300 hover:text-orange-600 dark:hover:border-orange-500 dark:hover:text-orange-400 transition-all"><PenNibIcon size={12} /> Start Writing</Link>
+                  <button onClick={scrollToStories} className="inline-flex items-center gap-2 px-7 py-3.5 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm rounded-xl transition-colors shadow-lg shadow-orange-500/25">រកមើលរឿងរ៉ាវ <ArrowRightIcon size={12} /></button>
+                  <Link to="/create" className="inline-flex items-center gap-2 px-7 py-3.5 border-2 border-gray-200 dark:border-slate-700 text-gray-700 dark:text-slate-300 font-semibold text-sm rounded-xl hover:border-orange-300 hover:text-orange-600 dark:hover:border-orange-500 dark:hover:text-orange-400 transition-all"><PenNibIcon size={12} /> ចាប់ផ្តើមសរសេរ</Link>
                 </div>
                 <div className="flex items-center justify-center gap-3 mt-8">
                   {CATEGORY_CARDS.slice(0, 4).map((cat) => (
@@ -381,7 +384,7 @@ export default function HomePage() {
               <div className="mt-10 sm:mt-14">
                 <div className="flex items-center justify-between mb-5">
                   <h3 className="font-display text-lg font-bold text-gray-900 dark:text-white">ប្រធានបទច្រើនទៀត</h3>
-                  <button onClick={scrollToStories} className="text-orange-500 hover:text-orange-600 text-xs font-semibold flex items-center gap-1 transition-colors">View All <ArrowRightIcon size={10} /></button>
+                  <button onClick={scrollToStories} className="text-orange-500 hover:text-orange-600 text-xs font-semibold flex items-center gap-1 transition-colors">មើលទាំងអស់ <ArrowRightIcon size={10} /></button>
                 </div>
                 <div className="flex gap-4 overflow-x-auto pb-2 scrollbar-hide">
                   {CATEGORY_CARDS.slice(4).map((cat) => (
@@ -435,8 +438,8 @@ export default function HomePage() {
                       <div><p className="text-sm font-semibold text-gray-800 dark:text-white">{sidebarFeatured.author}</p><p className="text-xs text-gray-400 dark:text-slate-500">{formatDate(sidebarFeatured.created_at)} · {estimateReadTime(sidebarFeatured.content)} min read</p></div>
                     </div>
                     <div className="flex gap-3">
-                      <Link to={`/post/${sidebarFeatured.id}`} className="inline-flex items-center gap-2 px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm rounded-xl transition-colors">Read Story <ArrowRightIcon size={12} /></Link>
-                      <Link to="/create" className="inline-flex items-center gap-2 px-6 py-3 border border-gray-200 dark:border-slate-600 text-gray-600 dark:text-slate-300 font-semibold text-sm rounded-xl hover:bg-gray-50 dark:hover:bg-slate-800 transition-colors"><PenNibIcon size={12} /> Write Too</Link>
+                      <Link to={`/post/${sidebarFeatured.id}`} className="inline-flex items-center gap-2 px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm rounded-xl transition-colors">អានរឿងរ៉ាវ <ArrowRightIcon size={12} /></Link>
+                      <Link to="/create" className="inline-flex items-center gap-2 px-6 py-3 border border-gray-200 dark:border-slate-600 text-gray-600 dark:text-slate-300 font-semibold text-sm rounded-xl hover:bg-gray-50 dark:hover:bg-slate-800 transition-colors"><PenNibIcon size={12} /> សរសេរឥឡូវនេះ</Link>
                     </div>
                   </div>
                 </div>
@@ -465,13 +468,13 @@ export default function HomePage() {
               <div>
                 <span className="text-orange-500 text-[11px] font-semibold uppercase tracking-widest">ប្លុក</span>
                 <h2 className="font-display text-2xl sm:text-3xl font-black text-gray-900 dark:text-white mt-1">
-                  {activeTag ? <span>អំពីរឿងរ៉ាវ <span className="text-orange-500 capitalize">{activeTag}</span></span> : search ? 'Search Results' : 'Latest Stories'}
+                  {activeTag ? <span>អំពីរឿងរ៉ាវ <span className="text-orange-500 capitalize">{activeTag}</span></span> : search ? 'Search Results' : 'រឿងរ៉ាវថ្មីៗបំផុត'}
                   <span className="text-base font-normal text-gray-400 dark:text-slate-500 ml-2">({filtered.length})</span>
                 </h2>
               </div>
               <div className="relative w-full sm:w-64">
                 <SearchIcon size={12} className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
-                <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Quick search..." className="w-full pl-9 pr-3 py-2.5 rounded-xl border border-gray-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-gray-800 dark:text-white text-sm placeholder:text-gray-400 focus:border-orange-400 focus:ring-2 focus:ring-orange-500/10 transition-all" />
+                <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="ស្វែងរករហ័ស..." className="w-full pl-9 pr-3 py-2.5 rounded-xl border border-gray-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-gray-800 dark:text-white text-sm placeholder:text-gray-400 focus:border-orange-400 focus:ring-2 focus:ring-orange-500/10 transition-all" />
                 {search && <button onClick={() => setSearch('')} className="absolute right-2.5 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"><XMarkIcon size={12} /></button>}
               </div>
             </div>
@@ -543,7 +546,7 @@ export default function HomePage() {
                   <div className="bg-white dark:bg-slate-900 rounded-xl p-4 border border-gray-100 dark:border-slate-700"><div className="w-10 h-10 rounded-lg bg-orange-50 dark:bg-orange-500/10 flex items-center justify-center mb-3"><AwardIcon size={18} className="text-orange-500" /></div><h3 className="font-display text-sm font-bold text-gray-900 dark:text-white mb-1">លក់ផ្ទាល់ខ្លួនល្អបំផុត</h3><p className="text-xs text-gray-500 dark:text-slate-400 leading-relaxed">មាតិកាដែលបានជ្រើសរើសយ៉ាងម៉ត់ចត់ ដោយផ្តោតលើគុណភាពជាងបរិមាណ</p></div>
                   <div className="bg-white dark:bg-slate-900 rounded-xl p-4 border border-gray-100 dark:border-slate-700"><div className="w-10 h-10 rounded-lg bg-blue-50 dark:bg-blue-500/10 flex items-center justify-center mb-3"><ShieldIcon size={18} className="text-blue-500" /></div><h3 className="font-display text-sm font-bold text-gray-900 dark:text-white mb-1">រឿងរ៉ាវឥតគិតថ្លៃជារៀងរហូត</h3><p className="text-xs text-gray-500 dark:text-slate-400 leading-relaxed">គ្មានការបិទខ្ទប់ការចូលប្រើ, គ្មានការផ្សព្វផ្សាយ, គ្មានអាល់ហ្គូរីធម៍។ មានតែការសរសេរដោយស្មោះត្រង់ប៉ុណ្ណោះ</p></div>
                 </div>
-                <button onClick={scrollToStories} className="inline-flex items-center gap-2.5 px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-bold text-sm rounded-xl transition-colors shadow-lg shadow-orange-500/25">Browse Stories <ArrowRightIcon size={12} /></button>
+                <button onClick={scrollToStories} className="inline-flex items-center gap-2.5 px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-bold text-sm rounded-xl transition-colors shadow-lg shadow-orange-500/25">រកមើលរឿងរ៉ាវ <ArrowRightIcon size={12} /></button>
               </div>
             </RevealSection>
             <RevealSection delay={200}>
@@ -595,8 +598,8 @@ export default function HomePage() {
               <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-[1.08] mb-5">រឿងរ៉ាវពេញនិយម<br /><span className="text-orange-300">អាចប្រើបានសម្រាប់មនុស្សគ្រប់គ្នា</span></h2>
               <p className="text-white/55 text-base sm:text-lg leading-relaxed max-w-lg mb-8">ចូលទៅក្នុងពិភពនៃរឿងរ៉ាវដែលបានជ្រើសរើសសម្រាប់ចិត្តដែលចង់ដឹងចង់ឃើញ។ ចាប់ពីការគិតស្ងប់ស្ងាត់រហូតដល់ការផ្សងព្រេងដ៏ក្លាហាន — តែងតែមានអ្វីថ្មីៗសម្រាប់ស្វែងរកជានិច្ច.</p>
               <div className="flex flex-wrap gap-4">
-                <button onClick={scrollToStories} className="inline-flex items-center gap-2.5 px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-bold text-sm rounded-xl transition-colors shadow-xl shadow-orange-500/30">Browse Stories Now <ArrowRightIcon size={12} /></button>
-                <Link to="/create" className="inline-flex items-center gap-2.5 px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white font-semibold text-sm rounded-xl transition-colors border border-white/20"><PenNibIcon size={12} /> Write Your Story</Link>
+                <button onClick={scrollToStories} className="inline-flex items-center gap-2.5 px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-bold text-sm rounded-xl transition-colors shadow-xl shadow-orange-500/30">រកមើលរឿងរ៉ាវឥឡូវនេះ <ArrowRightIcon size={12} /></button>
+                <Link to="/create" className="inline-flex items-center gap-2.5 px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white font-semibold text-sm rounded-xl transition-colors border border-white/20"><PenNibIcon size={12} /> សរសេររឿងរ៉ាវរបស់អ្នក</Link>
               </div>
               <div className="flex flex-wrap items-center gap-5 mt-10">
                 {[{ number: `${posts.length}+`, label: 'Stories' }, { number: `${tags.length}+`, label: 'Topics' }, { number: '100%', label: 'Free' }].map((stat, i) => (<div key={i} className="flex items-center gap-2.5"><p className="text-xl font-display font-black text-white">{stat.number}</p><p className="text-[10px] uppercase tracking-widest text-white/40 font-semibold">{stat.label}</p>{i < 2 && <span className="w-px h-6 bg-white/15 ml-2.5"></span>}</div>))}
@@ -708,8 +711,8 @@ export default function HomePage() {
               <p className="text-orange-100 text-sm sm:text-base">ចែករំលែករឿងដំបូងរបស់អ្នក — វាឥតគិតថ្លៃ ហើយនឹងឥតគិតថ្លៃជានិច្</p>
             </div>
             <div className="flex gap-3 shrink-0">
-              <Link to="/create" className="inline-flex items-center gap-2 px-7 py-3.5 bg-white text-orange-500 font-semibold text-sm rounded-xl hover:bg-gray-100 transition-colors shadow-lg"><PenNibIcon size={12} /> Write Now</Link>
-              <Link to="/login" className="inline-flex items-center gap-2 px-7 py-3.5 bg-white/15 text-white font-semibold text-sm rounded-xl hover:bg-white/25 transition-colors border border-white/20">Sign In</Link>
+              <Link to="/create" className="inline-flex items-center gap-2 px-7 py-3.5 bg-white text-orange-500 font-semibold text-sm rounded-xl hover:bg-gray-100 transition-colors shadow-lg"><PenNibIcon size={12} /> សរសេរឥឡូវនេះ</Link>
+              <Link to="/login" className="inline-flex items-center gap-2 px-7 py-3.5 bg-white/15 text-white font-semibold text-sm rounded-xl hover:bg-white/25 transition-colors border border-white/20">ចុះឈ្មោះ</Link>
             </div>
           </div>
         </section>
