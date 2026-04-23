@@ -62,19 +62,19 @@ export default function Navbar() {
   const isActive = (path) => location.pathname === path;
 
   const desktopLinks = [
-    { to: '/', label: 'Home', Icon: HomeIcon },
-    { to: '/blog', label: 'Blog', Icon: BlogIcon },
-    { to: '/about', label: 'About', Icon: AboutIcon },
-    { to: '/contact', label: 'Contact', Icon: ContactIcon },
-    ...(isAuthenticated ? [{ to: '/create', label: 'Write', Icon: WriteIcon }] : []),
+    { to: '/', label: 'ទំព័រដើម', Icon: HomeIcon },
+    { to: '/blog', label: 'ប្លុក', Icon: BlogIcon },
+    { to: '/about', label: 'អំពី', Icon: AboutIcon },
+    { to: '/contact', label: 'ទំនាក់ទំនង', Icon: ContactIcon },
+    ...(isAuthenticated ? [{ to: '/create', label: 'សរសេរ', Icon: WriteIcon }] : []),
   ];
 
   const mobileTabs = [
-    { to: '/', label: 'Home', Icon: HomeIconSm },
-    { to: '/blog', label: 'Blog', Icon: BlogIconSm },
-    { to: '/about', label: 'About', Icon: AboutIconSm },
-    { to: '/contact', label: 'Contact', Icon: ContactIconSm },
-    ...(isAuthenticated ? [{ to: '/create', label: 'Write', Icon: WriteIconSm }] : []),
+    { to: '/', label: 'ទំព័រដើម', Icon: HomeIconSm },
+    { to: '/blog', label: 'ប្លុក', Icon: BlogIconSm },
+    { to: '/about', label: 'អំពី', Icon: AboutIconSm },
+    { to: '/contact', label: 'ទំនាក់ទំនង', Icon: ContactIconSm },
+    ...(isAuthenticated ? [{ to: '/create', label: 'សរសេរ', Icon: WriteIconSm }] : []),
   ];
 
   return (
@@ -85,7 +85,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-16">
             <Link to="/" className="flex items-center gap-2.5 group">
               <span className="text-accent group-hover:rotate-12 transition-transform duration-300"><FeatherIcon /></span>
-              <span className="font-display text-xl font-bold text-ink dark:text-warm-200">BOUNTHORN</span>
+              <span className="font-display text-xl font-bold text-ink dark:text-warm-200">ប៊ុនថនប្លុក</span>
             </Link>
 
             <div className="flex items-center gap-0.5">
@@ -138,7 +138,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-14">
             <Link to="/" className="flex items-center gap-2 group">
               <span className="text-accent group-hover:rotate-12 transition-transform duration-300"><FeatherIcon /></span>
-              <span className="font-display text-lg font-bold text-ink dark:text-warm-200">BOUNTHORN</span>
+              <span className="font-display text-lg font-bold text-ink dark:text-warm-200">ប៊ុនថនប្លុក</span>
             </Link>
 
             <div className="flex items-center gap-1.5">
