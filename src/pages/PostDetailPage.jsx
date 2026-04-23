@@ -102,7 +102,7 @@ export default function PostDetailPage() {
             className="inline-flex items-center gap-2 text-sm text-ink-muted dark:text-warm-300 hover:text-accent transition-colors"
           >
             <i className="fa-solid fa-arrow-left text-xs"></i>
-            All stories
+            រឿងរ៉ាវទាំងអស់
           </Link>
         </RevealSection>
 
