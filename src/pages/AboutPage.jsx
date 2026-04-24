@@ -181,7 +181,7 @@ export default function AboutPage() {
             <div className="text-center max-w-xl mx-auto mb-12">
               <span className="text-orange-500 text-[11px] font-bold uppercase tracking-widest">អ្វីដែលយើងជឿជាក់</span>
               <h2 className="font-display text-2xl sm:text-3xl font-black text-gray-900 dark:text-white mt-2 mb-4">តម្លៃស្នូលរបស់យើង</h2>
-              <p className="text-gray-500 dark:text-slate-400 text-sm sm:text-base leading-relaxed">Tទាំងនេះមិនមែនគ្រាន់តែជាពាក្យនៅលើទំព័រទេ — វាជាគោលការណ៍ដែលណែនាំរាល់រឿងរ៉ាវដែលយើងផ្សព្វផ្សាយ និងរាល់ការសម្រេចចិត្តដែលយើងធ្វើ ។.</p>
+              <p className="text-gray-500 dark:text-slate-400 text-sm sm:text-base leading-relaxed">ទាំងនេះមិនមែនគ្រាន់តែជាពាក្យនៅលើទំព័រទេ — វាជាគោលការណ៍ដែលណែនាំរាល់រឿងរ៉ាវដែលយើងផ្សព្វផ្សាយ និងរាល់ការសម្រេចចិត្តដែលយើងធ្វើ ។.</p>
             </div>
           </RevealSection>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
